@@ -131,8 +131,10 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `น้อง` | `ນ້ອງ` | Younger sibling. |
 | `ปู่` | `ປູ່` | Paternal grandfather. |
 | `ย่า` | `ຍ່າ` | Paternal grandmother. |
-| `ตา` | `ຕາ` | Maternal grandfather. |
-| `ยาย` | `ຍາຍ` | Maternal grandmother. |
+-| `ตา` | `ຕາ` | Maternal grandfather. |
+-| `ยาย` | `ຍາຍ` | Maternal grandmother. |
++| `ตา` | `ພໍ່ຕູ້` | Maternal grandfather. Vientiane standard. Regional: `ພໍ່ເຖົ້າ` |
++| `ยาย` | `ແມ່ຕູ້` | Maternal grandmother. Vientiane standard. Regional: `ແມ່ເຖົ້າ` |
 | `ลุง` | `ລຸງ` | Uncle (older). |
 | `ป้า` | `ປ້າ` | Aunt (older). |
 | `น้า` | `ນ້າ` | Maternal aunt/uncle (younger). |
@@ -274,12 +276,12 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `บด` | `ບົດ` | Grind. |
 | `หม้อ` | `ໝໍ້` | Pot. |
 | `กระทะ` | `ໝໍ້ຂົ້ວ` | Pan/Skillet. |
-| `ทัพพี` | `ພີ` | Ladle. |
+| `ทัพพี` | `ຈອງ` | Ladle. |
 | `ช้อน` | `ບ່ວງ` | Spoon. |
 | `ส้อม` | `ສ້ອມ` | Fork. |
 | `มีด` | `ພ້າ/ມີດ` | Knife. |
 | `เขียง` | `ຂຽງ` | Cutting board. |
-| `ตะหลิว` | `ຄັນຫຼິວ` | Spatula. |
+| `ตะหลิว` | `ຈອງ` | Spatula. |
 | `ครก` | `ຄົກ` | Mortar. |
 | `สาก` | `ສາກ` | Pestle. |
 | `ร้อน` | `ຮ້ອນ` | Hot. |
