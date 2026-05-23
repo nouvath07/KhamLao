@@ -1,0 +1,1134 @@
+{
+  "general": [
+    {
+      "thai": "ครับ",
+      "lao": "ໂດຍ/ເຈົ້າ",
+      "note": "Politeness particle (male). Use 'ໂດຍ' for formal."
+    },
+    {
+      "thai": "ค่ะ",
+      "lao": "ໂດຍ/ເຈົ້າ",
+      "note": "Politeness particle (female)."
+    },
+    {
+      "thai": "คุณ",
+      "lao": "ເຈົ້າ",
+      "note": "You (polite/general)."
+    },
+    {
+      "thai": "ผม",
+      "lao": "ຂ້ອຍ",
+      "note": "I (male, polite). 'ຂ້ອຍ' is standard for both."
+    },
+    {
+      "thai": "ฉัน",
+      "lao": "ຂ້ອຍ",
+      "note": "I (female, polite)."
+    },
+    {
+      "thai": "เรา",
+      "lao": "ເຮົາ",
+      "note": "We/Us."
+    },
+    {
+      "thai": "พวกเรา",
+      "lao": "ພວກເຮົາ",
+      "note": "We (group)."
+    },
+    {
+      "thai": "ใช่",
+      "lao": "ແມ່ນ",
+      "note": "Yes/Correct."
+    },
+    {
+      "thai": "ไม่",
+      "lao": "ບໍ່",
+      "note": "No/Not."
+    },
+    {
+      "thai": "ไหม",
+      "lao": "ບໍ່",
+      "note": "Question particle."
+    },
+    {
+      "thai": "นะ",
+      "lao": "ເດີ/ນາ",
+      "note": "Particle for emphasis/softening."
+    },
+    {
+      "thai": "ด้วย",
+      "lao": "ແດ່/ດ້ວຍ",
+      "note": "Also/With."
+    },
+    {
+      "thai": "หรือ",
+      "lao": "ຫຼື",
+      "note": "Or."
+    },
+    {
+      "thai": "และ",
+      "lao": "ແລະ",
+      "note": "And."
+    },
+    {
+      "thai": "แต่",
+      "lao": "ແຕ່",
+      "note": "But."
+    },
+    {
+      "thai": "ขอบคุณ",
+      "lao": "ຂອບໃຈ",
+      "note": "Thank you."
+    },
+    {
+      "thai": "ขอโทษ",
+      "lao": "ຂໍໂທດ",
+      "note": "Sorry/Excuse me."
+    },
+    {
+      "thai": "สวัสดี",
+      "lao": "ສະບາຍດີ",
+      "note": "Hello."
+    },
+    {
+      "thai": "ลาก่อน",
+      "lao": "ລາກ່ອນ",
+      "note": "Goodbye."
+    },
+    {
+      "thai": "ยินดีที่ได้รู้จัก",
+      "lao": "ຍິນດີທີ່ໄດ້ຮູ້ຈັກ",
+      "note": "Nice to meet you."
+    },
+    {
+      "thai": "ใคร",
+      "lao": "ໃຜ",
+      "note": "Who."
+    },
+    {
+      "thai": "อะไร",
+      "lao": "ຫຍັງ",
+      "note": "What."
+    },
+    {
+      "thai": "ที่ไหน",
+      "lao": "ໃສ",
+      "note": "Where."
+    },
+    {
+      "thai": "เมื่อไหร่",
+      "lao": "ຍາມໃດ",
+      "note": "When."
+    },
+    {
+      "thai": "ทำไม",
+      "lao": "ເປັນຫຍັງ",
+      "note": "Why."
+    },
+    {
+      "thai": "อย่างไร",
+      "lao": "ແນວໃດ",
+      "note": "How."
+    },
+    {
+      "thai": "เท่าไหร่",
+      "lao": "ທໍ່ໃດ",
+      "note": "How much."
+    },
+    {
+      "thai": "วันนี้",
+      "lao": "ມື້ນີ້",
+      "note": "Today."
+    },
+    {
+      "thai": "พรุ่งนี้",
+      "lao": "ມື້ອື່ນ",
+      "note": "Tomorrow."
+    },
+    {
+      "thai": "เมื่อวาน",
+      "lao": "ມື້ວານນີ້",
+      "note": "Yesterday."
+    },
+    {
+      "thai": "ตอนนี้",
+      "lao": "ຕອນນີ້",
+      "note": "Now."
+    },
+    {
+      "thai": "ภายหลัง",
+      "lao": "ພາຍຫຼັງ",
+      "note": "Later/Afterwards."
+    },
+    {
+      "thai": "เร็วๆ นี้",
+      "lao": "ໄວໆນີ້",
+      "note": "Soon."
+    },
+    {
+      "thai": "เช้า",
+      "lao": "ເຊົ້າ",
+      "note": "Morning."
+    },
+    {
+      "thai": "บ่าย",
+      "lao": "ບ່າຍ",
+      "note": "Afternoon."
+    },
+    {
+      "thai": "เย็น",
+      "lao": "ແລງ",
+      "note": "Evening."
+    },
+    {
+      "thai": "กลางคืน",
+      "lao": "ກາງຄືນ",
+      "note": "Night."
+    },
+    {
+      "thai": "เที่ยง",
+      "lao": "ທ່ຽງ",
+      "note": "Noon."
+    },
+    {
+      "thai": "หนึ่ง",
+      "lao": "ໜຶ່ງ",
+      "note": "One."
+    },
+    {
+      "thai": "สอง",
+      "lao": "ສອງ",
+      "note": "Two."
+    },
+    {
+      "thai": "สาม",
+      "lao": "ສາມ",
+      "note": "Three."
+    },
+    {
+      "thai": "สี่",
+      "lao": "ສີ່",
+      "note": "Four."
+    },
+    {
+      "thai": "ห้า",
+      "lao": "ຫ້າ",
+      "note": "Five."
+    },
+    {
+      "thai": "หก",
+      "lao": "ຫົກ",
+      "note": "Six."
+    },
+    {
+      "thai": "เจ็ด",
+      "lao": "ເຈັດ",
+      "note": "Seven."
+    },
+    {
+      "thai": "แปด",
+      "lao": "ແປດ",
+      "note": "Eight."
+    },
+    {
+      "thai": "เก้า",
+      "lao": "ເກົ້າ",
+      "note": "Nine."
+    },
+    {
+      "thai": "สิบ",
+      "lao": "ສິບ",
+      "note": "Ten."
+    },
+    {
+      "thai": "ร้อย",
+      "lao": "ຮ້ອຍ",
+      "note": "Hundred."
+    },
+    {
+      "thai": "พัน",
+      "lao": "ພັນ",
+      "note": "Thousand."
+    },
+    {
+      "thai": "หมื่น",
+      "lao": "ໝື່ນ",
+      "note": "Ten thousand."
+    },
+    {
+      "thai": "แสน",
+      "lao": "ແສນ",
+      "note": "Hundred thousand."
+    },
+    {
+      "thai": "ล้าน",
+      "lao": "ລ້ານ",
+      "note": "Million."
+    },
+    {
+      "thai": "พ่อ",
+      "lao": "ພໍ່",
+      "note": "Father."
+    },
+    {
+      "thai": "แม่",
+      "lao": "ແມ່",
+      "note": "Mother."
+    },
+    {
+      "thai": "ลูก",
+      "lao": "ລູກ",
+      "note": "Child."
+    },
+    {
+      "thai": "พี่",
+      "lao": "ອ້າຍ/ເອື້ອຍ",
+      "note": "Older brother/sister."
+    },
+    {
+      "thai": "น้อง",
+      "lao": "ນ້ອງ",
+      "note": "Younger sibling."
+    },
+    {
+      "thai": "ปู่",
+      "lao": "ປູ່",
+      "note": "Paternal grandfather."
+    },
+    {
+      "thai": "ย่า",
+      "lao": "ຍ່າ",
+      "note": "Paternal grandmother."
+    },
+    {
+      "thai": "ตา",
+      "lao": "ຕາ",
+      "note": "Maternal grandfather."
+    },
+    {
+      "thai": "ยาย",
+      "lao": "ຍາຍ",
+      "note": "Maternal grandmother."
+    },
+    {
+      "thai": "ลุง",
+      "lao": "ລຸງ",
+      "note": "Uncle (older)."
+    },
+    {
+      "thai": "ป้า",
+      "lao": "ປ້າ",
+      "note": "Aunt (older)."
+    },
+    {
+      "thai": "น้า",
+      "lao": "ນ້າ",
+      "note": "Maternal aunt/uncle (younger)."
+    },
+    {
+      "thai": "อา",
+      "lao": "ອາ",
+      "note": "Paternal aunt/uncle (younger)."
+    },
+    {
+      "thai": "หลาน",
+      "lao": "ຫຼານ",
+      "note": "Grandchild/Niece/Nephew."
+    },
+    {
+      "thai": "ผู้ชาย",
+      "lao": "ຜູ້ຊາຍ",
+      "note": "Man."
+    },
+    {
+      "thai": "ผู้หญิง",
+      "lao": "ຜູ້ຍິງ",
+      "note": "Woman."
+    },
+    {
+      "thai": "เด็ก",
+      "lao": "ເດັກນ້ອຍ",
+      "note": "Child/Kid."
+    },
+    {
+      "thai": "ผู้ใหญ่",
+      "lao": "ຜູ້ໃຫຍ່",
+      "note": "Adult."
+    },
+    {
+      "thai": "คน",
+      "lao": "ຄົນ",
+      "note": "Person."
+    },
+    {
+      "thai": "เพื่อน",
+      "lao": "ໝູ່",
+      "note": "Friend."
+    },
+    {
+      "thai": "บ้าน",
+      "lao": "ເຮືອນ",
+      "note": "House/Home."
+    },
+    {
+      "thai": "ห้อง",
+      "lao": "ຫ້ອງ",
+      "note": "Room."
+    },
+    {
+      "thai": "ห้องน้ำ",
+      "lao": "ຫ້ອງນ້ຳ",
+      "note": "Bathroom."
+    },
+    {
+      "thai": "ครัว",
+      "lao": "ເຮືອນຄົວ",
+      "note": "Kitchen."
+    },
+    {
+      "thai": "โต๊ะ",
+      "lao": "ໂຕະ",
+      "note": "Table."
+    },
+    {
+      "thai": "เก้าอี้",
+      "lao": "ຕັ່ງ",
+      "note": "Chair."
+    },
+    {
+      "thai": "เตียง",
+      "lao": "ຕຽງ",
+      "note": "Bed."
+    },
+    {
+      "thai": "ประตู",
+      "lao": "ປະຕູ",
+      "note": "Door."
+    },
+    {
+      "thai": "หน้าต่าง",
+      "lao": "ປ່ອງຢ້ຽມ",
+      "note": "Window."
+    },
+    {
+      "thai": "ไป",
+      "lao": "ໄປ",
+      "note": "Go."
+    },
+    {
+      "thai": "มา",
+      "lao": "ມາ",
+      "note": "Come."
+    },
+    {
+      "thai": "อยู่",
+      "lao": "ຢູ່",
+      "note": "Stay/Be."
+    },
+    {
+      "thai": "ทำ",
+      "lao": "ເຮັດ",
+      "note": "Do/Make."
+    },
+    {
+      "thai": "กิน",
+      "lao": "ກິນ",
+      "note": "Eat."
+    },
+    {
+      "thai": "ดื่ม",
+      "lao": "ດື່ມ",
+      "note": "Drink."
+    },
+    {
+      "thai": "นอน",
+      "lao": "ນອນ",
+      "note": "Sleep."
+    },
+    {
+      "thai": "พูด",
+      "lao": "ເວົ້າ",
+      "note": "Speak/Talk."
+    },
+    {
+      "thai": "ฟัง",
+      "lao": "ຟັງ",
+      "note": "Listen."
+    },
+    {
+      "thai": "เห็น",
+      "lao": "ເຫັນ",
+      "note": "See."
+    },
+    {
+      "thai": "ดู",
+      "lao": "ເບິ່ງ",
+      "note": "Watch/Look."
+    },
+    {
+      "thai": "อ่าน",
+      "lao": "ອ່ານ",
+      "note": "Read."
+    },
+    {
+      "thai": "เขียน",
+      "lao": "ຂຽນ",
+      "note": "Write."
+    },
+    {
+      "thai": "ซื้อ",
+      "lao": "ຊື້",
+      "note": "Buy."
+    },
+    {
+      "thai": "ขาย",
+      "lao": "ຂາຍ",
+      "note": "Sell."
+    },
+    {
+      "thai": "ใหญ่",
+      "lao": "ໃຫຍ່",
+      "note": "Big."
+    },
+    {
+      "thai": "เล็ก",
+      "lao": "ນ້ອຍ",
+      "note": "Small."
+    },
+    {
+      "thai": "ดี",
+      "lao": "ດີ",
+      "note": "Good."
+    },
+    {
+      "thai": "ไม่ดี",
+      "lao": "ບໍ່ດີ",
+      "note": "Bad."
+    },
+    {
+      "thai": "สวย",
+      "lao": "ງາມ",
+      "note": "Beautiful."
+    },
+    {
+      "thai": "น่าเกลียด",
+      "lao": "ຂີ້ຮ້າຍ",
+      "note": "Ugly."
+    },
+    {
+      "thai": "ใหม่",
+      "lao": "ໃໝ່",
+      "note": "New."
+    },
+    {
+      "thai": "เก่า",
+      "lao": "ເກົ່າ",
+      "note": "Old."
+    },
+    {
+      "thai": "ร้อน",
+      "lao": "ຮ້ອນ",
+      "note": "Hot."
+    },
+    {
+      "thai": "เย็น",
+      "lao": "ເຢັນ",
+      "note": "Cold."
+    },
+    {
+      "thai": "หวาน",
+      "lao": "ຫວານ",
+      "note": "Sweet."
+    },
+    {
+      "thai": "เปรี้ยว",
+      "lao": "ສົ້ມ",
+      "note": "Sour."
+    },
+    {
+      "thai": "เค็ม",
+      "lao": "ເຄັມ",
+      "note": "Salty."
+    },
+    {
+      "thai": "เผ็ด",
+      "lao": "ເຜັດ",
+      "note": "Spicy."
+    },
+    {
+      "thai": "เร็ว",
+      "lao": "ໄວ",
+      "note": "Fast."
+    },
+    {
+      "thai": "ช้า",
+      "lao": "ຊ້າ",
+      "note": "Slow."
+    },
+    {
+      "thai": "ใกล้",
+      "lao": "ໃກ້",
+      "note": "Near."
+    },
+    {
+      "thai": "ไกล",
+      "lao": "ໄກ",
+      "note": "Far."
+    },
+    {
+      "thai": "มาก",
+      "lao": "ຫຼາຍ",
+      "note": "Very/Many."
+    },
+    {
+      "thai": "น้อย",
+      "lao": "ໜ້ອຍ",
+      "note": "Little/Few."
+    },
+    {
+      "thai": "หลาย",
+      "lao": "ຫຼາຍ",
+      "note": "Many."
+    },
+    {
+      "thai": "บาง",
+      "lao": "ບາງ",
+      "note": "Some."
+    },
+    {
+      "thai": "เงิน",
+      "lao": "ເງິນ",
+      "note": "Money."
+    },
+    {
+      "thai": "ราคา",
+      "lao": "ລາຄາ",
+      "note": "Price."
+    },
+    {
+      "thai": "แพง",
+      "lao": "ແພງ",
+      "note": "Expensive."
+    },
+    {
+      "thai": "ถูก",
+      "lao": "ຖືກ",
+      "note": "Cheap."
+    },
+    {
+      "thai": "รัก",
+      "lao": "ຮັກ",
+      "note": "Love."
+    },
+    {
+      "thai": "ชอบ",
+      "lao": "ມັກ",
+      "note": "Like."
+    },
+    {
+      "thai": "เกลียด",
+      "lao": "ຊັງ",
+      "note": "Hate."
+    },
+    {
+      "thai": "ดีใจ",
+      "lao": "ດີໃຈ",
+      "note": "Happy/Glad."
+    },
+    {
+      "thai": "เศร้า",
+      "lao": "ເສຍໃຈ",
+      "note": "Sad."
+    },
+    {
+      "thai": "โกรธ",
+      "lao": "ສູນ/ຄຽດ",
+      "note": "Angry."
+    },
+    {
+      "thai": "กลัว",
+      "lao": "ຢ້ານ",
+      "note": "Afraid."
+    },
+    {
+      "thai": "เหนื่อย",
+      "lao": "ເມື່ອຍ",
+      "note": "Tired."
+    },
+    {
+      "thai": "หิว",
+      "lao": "ຫິວ",
+      "note": "Hungry."
+    },
+    {
+      "thai": "อิ่ม",
+      "lao": "ອີ່ມ",
+      "note": "Full (stomach)."
+    },
+    {
+      "thai": "เจ็บ",
+      "lao": "ເຈັບ",
+      "note": "Hurt/Pain."
+    },
+    {
+      "thai": "ป่วย",
+      "lao": "ເປັນໄຂ້",
+      "note": "Sick."
+    },
+    {
+      "thai": "ข้าว",
+      "lao": "ເຂົ້າ",
+      "note": "Rice."
+    },
+    {
+      "thai": "ข้าวสาร",
+      "lao": "ເຂົ້າສານ",
+      "note": "Raw rice."
+    },
+    {
+      "thai": "ข้าวสวย",
+      "lao": "ເຂົ້າຈ້າວ",
+      "note": "Cooked jasmine rice."
+    },
+    {
+      "thai": "ข้าวเหนียว",
+      "lao": "ເຂົ້າໜຽວ",
+      "note": "Sticky rice."
+    },
+    {
+      "thai": "เส้นก๋วยเตี๋ยว",
+      "lao": "ເສັ້ນເຝີ",
+      "note": "Noodle (flat rice noodle)."
+    },
+    {
+      "thai": "เส้นหมี่",
+      "lao": "ເສັ້ນໝີ່",
+      "note": "Rice vermicelli."
+    },
+    {
+      "thai": "บะหมี่",
+      "lao": "ໝີ່",
+      "note": "Egg noodles."
+    },
+    {
+      "thai": "น้ำ",
+      "lao": "ນ້ຳ",
+      "note": "Water."
+    },
+    {
+      "thai": "น้ำตาล",
+      "lao": "ນ້ຳຕານ",
+      "note": "Sugar."
+    },
+    {
+      "thai": "เกลือ",
+      "lao": "ເກືອ",
+      "note": "Salt."
+    },
+    {
+      "thai": "น้ำปลา",
+      "lao": "ນ້ຳປາ",
+      "note": "Fish sauce."
+    },
+    {
+      "thai": "น้ำมัน",
+      "lao": "ນ້ຳມັນ",
+      "note": "Oil."
+    },
+    {
+      "thai": "ซีอิ๊ว",
+      "lao": "ຊີອິ້ວ",
+      "note": "Soy sauce."
+    },
+    {
+      "thai": "ซอส",
+      "lao": "ຊອດ",
+      "note": "Sauce."
+    },
+    {
+      "thai": "พริก",
+      "lao": "ໝາກພິກ",
+      "note": "Chili."
+    },
+    {
+      "thai": "พริกไทย",
+      "lao": "ພິກໄທ",
+      "note": "Pepper."
+    },
+    {
+      "thai": "กระเทียม",
+      "lao": "ກະທຽມ",
+      "note": "Garlic."
+    },
+    {
+      "thai": "หอม",
+      "lao": "ຫອມ",
+      "note": "Onion/Shallot/Fragrant."
+    },
+    {
+      "thai": "หอมแดง",
+      "lao": "ຫອມບົ່ວ",
+      "note": "Shallot."
+    },
+    {
+      "thai": "ขิง",
+      "lao": "ຂີງ",
+      "note": "Ginger."
+    },
+    {
+      "thai": "ข่า",
+      "lao": "ຂ່າ",
+      "note": "Galangal."
+    },
+    {
+      "thai": "ตะไคร้",
+      "lao": "ຫົວສິງໄຄ",
+      "note": "Lemongrass."
+    },
+    {
+      "thai": "ใบมะกรูด",
+      "lao": "ໃບບັກຂີ້ຫູດ",
+      "note": "Kaffir lime leaf."
+    },
+    {
+      "thai": "ผักชี",
+      "lao": "ຜັກຫອມປ້ອມ",
+      "note": "Coriander/Cilantro."
+    },
+    {
+      "thai": "ใบโหระพา",
+      "lao": "ໃບລະພາ",
+      "note": "Sweet basil."
+    },
+    {
+      "thai": "ใบกระเพรา",
+      "lao": "ໃບກະເພົາ",
+      "note": "Holy basil."
+    },
+    {
+      "thai": "ไก่",
+      "lao": "ໄກ່",
+      "note": "Chicken."
+    },
+    {
+      "thai": "หมู",
+      "lao": "ໝູ",
+      "note": "Pork."
+    },
+    {
+      "thai": "เนื้อ",
+      "lao": "ຊີ້ນ",
+      "note": "Meat (usually beef in Lao)."
+    },
+    {
+      "thai": "ปลา",
+      "lao": "ປາ",
+      "note": "Fish."
+    },
+    {
+      "thai": "กุ้ง",
+      "lao": "ກຸ້ງ",
+      "note": "Shrimp/Prawn."
+    },
+    {
+      "thai": "ปู",
+      "lao": "ກະປູ",
+      "note": "Crab."
+    },
+    {
+      "thai": "ไข่",
+      "lao": "ໄຂ່",
+      "note": "Egg."
+    },
+    {
+      "thai": "ไส้กรอก",
+      "lao": "ໄສ້ກອກ",
+      "note": "Sausage."
+    },
+    {
+      "thai": "ผัก",
+      "lao": "ຜັກ",
+      "note": "Vegetable."
+    },
+    {
+      "thai": "ผักกาด",
+      "lao": "ຜັກກາດ",
+      "note": "Chinese cabbage/Mustard green."
+    },
+    {
+      "thai": "ผักบุ้ง",
+      "lao": "ຜັກບົ້ງ",
+      "note": "Morning glory."
+    },
+    {
+      "thai": "แครอท",
+      "lao": "ແຄຣັອດ",
+      "note": "Carrot."
+    },
+    {
+      "thai": "มะเขือ",
+      "lao": "ໝາກເຂືອ",
+      "note": "Eggplant."
+    },
+    {
+      "thai": "มะเขือเทศ",
+      "lao": "ໝາກເລັ່ນ",
+      "note": "Tomato."
+    },
+    {
+      "thai": "ฟัก",
+      "lao": "ໝາກຟັກ",
+      "note": "Winter melon."
+    },
+    {
+      "thai": "ฟักทอง",
+      "lao": "ໝາກອຶ",
+      "note": "Pumpkin."
+    },
+    {
+      "thai": "แตงกวา",
+      "lao": "ໝາກແຕງ",
+      "note": "Cucumber."
+    },
+    {
+      "thai": "ถั่ว",
+      "lao": "ໝາກຖົ່ວ",
+      "note": "Bean/Peanut."
+    },
+    {
+      "thai": "ผลไม้",
+      "lao": "ໝາກໄມ້",
+      "note": "Fruit."
+    },
+    {
+      "thai": "กล้วย",
+      "lao": "ໝາກກ້ວຍ",
+      "note": "Banana."
+    },
+    {
+      "thai": "มะม่วง",
+      "lao": "ໝາກມ່ວງ",
+      "note": "Mango."
+    },
+    {
+      "thai": "ส้ม",
+      "lao": "ໝາກກ້ຽງ",
+      "note": "Orange."
+    },
+    {
+      "thai": "แตงโม",
+      "lao": "ໝາກໂມ",
+      "note": "Watermelon."
+    },
+    {
+      "thai": "มะละกอ",
+      "lao": "ໝາກຫຸ່ງ",
+      "note": "Papaya."
+    },
+    {
+      "thai": "ทุเรียน",
+      "lao": "ໝາກຖຸລຽນ",
+      "note": "Durian."
+    },
+    {
+      "thai": "เงาะ",
+      "lao": "ໝາກເງາະ",
+      "note": "Rambutan."
+    },
+    {
+      "thai": "ลำไย",
+      "lao": "ໝາກລຳໄຍ",
+      "note": "Longan."
+    },
+    {
+      "thai": "ลิ้นจี่",
+      "lao": "ໝາກລິ້ນຈີ່",
+      "note": "Lychee."
+    },
+    {
+      "thai": "ต้ม",
+      "lao": "ຕົ້ມ",
+      "note": "Boil."
+    },
+    {
+      "thai": "ผัด",
+      "lao": "ຂົ້ວ",
+      "note": "Stir-fry. 'ຜັດ' is also used but 'ຂົ້ວ' is more Lao."
+    },
+    {
+      "thai": "ทอด",
+      "lao": "ຈືນ",
+      "note": "Deep-fry. 'ທອດ' is also used."
+    },
+    {
+      "thai": "ย่าง",
+      "lao": "ປີ້ງ",
+      "note": "Grill (Lao uses 'ປີ້ງ' more than 'ຍ່າງ')."
+    },
+    {
+      "thai": "ปิ้ง",
+      "lao": "ປີ້ງ",
+      "note": "Grill/Toast."
+    },
+    {
+      "thai": "นึ่ง",
+      "lao": "ໜຶ້ງ",
+      "note": "Steam."
+    },
+    {
+      "thai": "แกง",
+      "lao": "ແກງ",
+      "note": "Soup/Curry."
+    },
+    {
+      "thai": "หุง",
+      "lao": "ຫຸງ",
+      "note": "Cook (rice)."
+    },
+    {
+      "thai": "ตำ",
+      "lao": "ຕຳ",
+      "note": "Pound (in mortar)."
+    },
+    {
+      "thai": "หั่น",
+      "lao": "ຊອຍ",
+      "note": "Slice/Cut."
+    },
+    {
+      "thai": "สับ",
+      "lao": "ຟັກ",
+      "note": "Chop/Mince."
+    },
+    {
+      "thai": "บด",
+      "lao": "ບົດ",
+      "note": "Grind."
+    },
+    {
+      "thai": "หม้อ",
+      "lao": "ໝໍ້",
+      "note": "Pot."
+    },
+    {
+      "thai": "กระทะ",
+      "lao": "ໝໍ້ຂົ້ວ",
+      "note": "Pan/Skillet."
+    },
+    {
+      "thai": "ทัพพี",
+      "lao": "ພີ",
+      "note": "Ladle."
+    },
+    {
+      "thai": "ช้อน",
+      "lao": "ບ່ວງ",
+      "note": "Spoon."
+    },
+    {
+      "thai": "ส้อม",
+      "lao": "ສ້ອມ",
+      "note": "Fork."
+    },
+    {
+      "thai": "มีด",
+      "lao": "ພ້າ/ມີດ",
+      "note": "Knife."
+    },
+    {
+      "thai": "เขียง",
+      "lao": "ຂຽງ",
+      "note": "Cutting board."
+    },
+    {
+      "thai": "ตะหลิว",
+      "lao": "ຄັນຫຼິວ",
+      "note": "Spatula."
+    },
+    {
+      "thai": "ครก",
+      "lao": "ຄົກ",
+      "note": "Mortar."
+    },
+    {
+      "thai": "สาก",
+      "lao": "ສາກ",
+      "note": "Pestle."
+    },
+    {
+      "thai": "ร้อน",
+      "lao": "ຮ້ອນ",
+      "note": "Hot."
+    },
+    {
+      "thai": "เย็น",
+      "lao": "ເຢັນ",
+      "note": "Cold."
+    },
+    {
+      "thai": "อุ่น",
+      "lao": "ອຸ່ນ",
+      "note": "Warm."
+    },
+    {
+      "thai": "ดิบ",
+      "lao": "ດິບ",
+      "note": "Raw."
+    },
+    {
+      "thai": "สุก",
+      "lao": "ສຸກ",
+      "note": "Cooked/Ripe."
+    },
+    {
+      "thai": "อร่อย",
+      "lao": "ແຊບ",
+      "note": "Delicious."
+    },
+    {
+      "thai": "ไม่อร่อย",
+      "lao": "ບໍ່ແຊບ",
+      "note": "Not delicious."
+    },
+    {
+      "thai": "ขม",
+      "lao": "ຂົມ",
+      "note": "Bitter."
+    },
+    {
+      "thai": "จืด",
+      "lao": "ຈືດ",
+      "note": "Bland."
+    },
+    {
+      "thai": "ส้มตำ",
+      "lao": "ຕຳໝາກຫຸ່ງ",
+      "note": "Papaya salad."
+    },
+    {
+      "thai": "ลาบ",
+      "lao": "ລາບ",
+      "note": "Larb (minced meat salad)."
+    },
+    {
+      "thai": "ต้มยำ",
+      "lao": "ຕົ້ມຍຳ",
+      "note": "Tom Yum soup."
+    },
+    {
+      "thai": "แกงเขียวหวาน",
+      "lao": "ແກງຂຽວຫວານ",
+      "note": "Green curry."
+    },
+    {
+      "thai": "ผัดไทย",
+      "lao": "ຜັດໄທ",
+      "note": "Pad Thai."
+    },
+    {
+      "thai": "ข้าวเหนียวมะม่วง",
+      "lao": "ເຂົ້າໜຽວໝາກມ່ວງ",
+      "note": "Mango sticky rice."
+    }
+  ]
+}
