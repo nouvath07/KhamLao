@@ -5,3 +5,7 @@ node_modules/
 .env.local
 dist/
 build/
+
+# Artifacts from `npx skills add` if accidentally run inside the repo
+.agents/
+skills-lock.json
