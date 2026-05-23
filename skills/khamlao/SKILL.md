@@ -80,7 +80,7 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `พวกเรา` | `ພວກເຮົາ` | We (group). |
 | `ใช่` | `ແມ່ນ` | Yes/Correct. |
 | `ไม่` | `ບໍ່` | No/Not. |
-| `ไหม` | `ບໍ່` | Question particle. |
+| `ไหม` | `ບໍ` | Question particle (no tone — distinct from `ບໍ່` "not"). |
 | `นะ` | `ເດີ/ນາ` | Particle for emphasis/softening. |
 | `ด้วย` | `ແດ່/ດ້ວຍ` | Also/With. |
 | `หรือ` | `ຫຼື` | Or. |
@@ -105,7 +105,7 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `ภายหลัง` | `ພາຍຫຼັງ` | Later/Afterwards. |
 | `เร็วๆ นี้` | `ໄວໆນີ້` | Soon. |
 | `เช้า` | `ເຊົ້າ` | Morning. |
-| `บ่าย` | `ບ່າຍ` | Afternoon. |
+| `บ่าย` | `ສວາຍ` | Afternoon. ❌ Avoid `ບ່າຍ` (Thai loanword). |
 | `เย็น` | `ແລງ` | Evening. |
 | `กลางคืน` | `ກາງຄືນ` | Night. |
 | `เที่ยง` | `ທ່ຽງ` | Noon. |
@@ -131,10 +131,8 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `น้อง` | `ນ້ອງ` | Younger sibling. |
 | `ปู่` | `ປູ່` | Paternal grandfather. |
 | `ย่า` | `ຍ່າ` | Paternal grandmother. |
--| `ตา` | `ຕາ` | Maternal grandfather. |
--| `ยาย` | `ຍາຍ` | Maternal grandmother. |
-+| `ตา` | `ພໍ່ຕູ້` | Maternal grandfather. Vientiane standard. Regional: `ພໍ່ເຖົ້າ` |
-+| `ยาย` | `ແມ່ຕູ້` | Maternal grandmother. Vientiane standard. Regional: `ແມ່ເຖົ້າ` |
+| `ตา` | `ພໍ່ຕູ້` | Maternal grandfather. Vientiane standard. Variants: `ພໍ່ເຖົ້າ`. ❌ Avoid `ຕາ` (Thai loanword). |
+| `ยาย` | `ແມ່ຕູ້` | Maternal grandmother. Vientiane standard. Variants: `ແມ່ເຖົ້າ`. ❌ Avoid `ຍາຍ` (Thai loanword). |
 | `ลุง` | `ລຸງ` | Uncle (older). |
 | `ป้า` | `ປ້າ` | Aunt (older). |
 | `น้า` | `ນ້າ` | Maternal aunt/uncle (younger). |
@@ -207,7 +205,7 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `หิว` | `ຫິວ` | Hungry. |
 | `อิ่ม` | `ອີ່ມ` | Full (stomach). |
 | `เจ็บ` | `ເຈັບ` | Hurt/Pain. |
-| `ป่วย` | `ເປັນໄຂ້` | Sick. |
+| `ป่วย` | `ບໍ່ສະບາຍ` | Sick / unwell (general). ⚠️ `ໄຂ້` means "fever" specifically, not generic sickness. |
 | `ข้าว` | `ເຂົ້າ` | Rice. |
 | `ข้าวสาร` | `ເຂົ້າສານ` | Raw rice. |
 | `ข้าวสวย` | `ເຂົ້າຈ້າວ` | Cooked jasmine rice. |
@@ -239,13 +237,13 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `เนื้อ` | `ຊີ້ນ` | Meat (usually beef in Lao). |
 | `ปลา` | `ປາ` | Fish. |
 | `กุ้ง` | `ກຸ້ງ` | Shrimp/Prawn. |
-| `ปู` | `ກະປູ` | Crab. |
+| `ปู` | `ປູ` | Crab. (`ກະປູ` also acceptable.) |
 | `ไข่` | `ໄຂ່` | Egg. |
-| `ไส้กรอก` | `ໄສ້ກອກ` | Sausage. |
+| `ไส้กรอก` | `ໄສ້ອົ້ວ` | Sausage. |
 | `ผัก` | `ຜັກ` | Vegetable. |
 | `ผักกาด` | `ຜັກກາດ` | Chinese cabbage/Mustard green. |
 | `ผักบุ้ง` | `ຜັກບົ້ງ` | Morning glory. |
-| `แครอท` | `ແຄຣັອດ` | Carrot. |
+| `แครอท` | `ແຄຣັອດ` / `ກາລົດ` | Carrot. Both are common transliterations. |
 | `มะเขือ` | `ໝາກເຂືອ` | Eggplant. |
 | `มะเขือเทศ` | `ໝາກເລັ່ນ` | Tomato. |
 | `ฟัก` | `ໝາກຟັກ` | Winter melon. |
@@ -276,12 +274,12 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `บด` | `ບົດ` | Grind. |
 | `หม้อ` | `ໝໍ້` | Pot. |
 | `กระทะ` | `ໝໍ້ຂົ້ວ` | Pan/Skillet. |
-| `ทัพพี` | `ຈອງ` | Ladle. |
+| `ทัพพี` | `ຈອງ` | Ladle. ⚠️ Homonym with `ຈອງ` "to book/reserve". |
 | `ช้อน` | `ບ່ວງ` | Spoon. |
 | `ส้อม` | `ສ້ອມ` | Fork. |
 | `มีด` | `ພ້າ/ມີດ` | Knife. |
 | `เขียง` | `ຂຽງ` | Cutting board. |
-| `ตะหลิว` | `ຈອງ` | Spatula. |
+| `ตะหลิว` | `ຈອງ` | Spatula. Same word as ladle in Lao (one term covers both). ⚠️ Homonym with `ຈອງ` "to book/reserve". |
 | `ครก` | `ຄົກ` | Mortar. |
 | `สาก` | `ສາກ` | Pestle. |
 | `ร้อน` | `ຮ້ອນ` | Hot. |
