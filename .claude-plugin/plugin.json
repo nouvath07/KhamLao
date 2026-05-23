@@ -1,0 +1,7 @@
+{
+  "name": "khamlao",
+  "description": "ຄຳລາວ (KhamLao) — Lao language quality + compression mode for Claude. Cuts ~40-60% tokens while enforcing correct Lao register, script, and idiom. (Inspired by pordee.)",
+  "author": {
+    "name": "KhamLao Contributors"
+  }
+}

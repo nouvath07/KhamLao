@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "khamlao",
+  "description": "Lao language quality + compression mode for Claude Code. ~40-60% fewer output tokens while enforcing correct Lao register and script.",
+  "owner": {
+    "name": "KhamLao Contributors"
+  },
+  "plugins": [
+    {
+      "name": "khamlao",
+      "description": "ຄຳລາວ — ໂໝດພາສາລາວທີ່ຖືກຕ້ອງ ແລະ ກະທັດຮັດ ສຳລັບ Claude. ຕັດ token ລົງ 40-60% ໂດຍບໍ່ເສຍຄຸນພາບພາສາ.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
