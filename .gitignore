@@ -9,3 +9,7 @@ build/
 # Artifacts from `npx skills add` if accidentally run inside the repo
 .agents/
 skills-lock.json
+
+# Python
+__pycache__/
+*.pyc
