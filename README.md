@@ -160,6 +160,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). You don't need to be a programmer — la
 
 ---
 
+## For developers/contributors
+
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** — how the system works, data flow, schemas, build process
+- **[ROADMAP.md](ROADMAP.md)** — open tasks organized by impact and difficulty
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — how to submit changes
+
 ## Known limitations
 
 - Claude's Lao training data is significantly weaker than English/Thai/Chinese. Domain glossaries help but the skill works best paired with Gemini CLI (which has stronger native Lao).
