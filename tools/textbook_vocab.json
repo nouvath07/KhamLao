@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "source": "Lao MOE textbooks via pubhtml5.com",
+    "books_extracted": [
+      "ພາສາລາວ ປ.1 ເຫຼັ້ມ 1 (LaoG1 Tb1) — 150 pages",
+      "ພາສາລາວ ປ.2 (LaoG2 TB1) — pages 1-50",
+      "ພາສາລາວ ປ.4 (Lao_4) — partial"
+    ],
+    "extraction_date": "2026-05-24",
+    "method": "WebFetch on /basic/ flipbook view + manual filtering"
+  },
+  "animals": [
+    {"lao": "ເສືອ", "en": "tiger"},
+    {"lao": "ໝາ", "en": "dog"},
+    {"lao": "ງູ", "en": "snake"},
+    {"lao": "ເຕົ່າ", "en": "turtle"},
+    {"lao": "ລີງ", "en": "monkey"},
+    {"lao": "ແຮດ", "en": "rhinoceros"},
+    {"lao": "ນົກ", "en": "bird"},
+    {"lao": "ມ້າ", "en": "horse"},
+    {"lao": "ກາ", "en": "crow"},
+    {"lao": "ຊ້າງ", "en": "elephant"},
+    {"lao": "ຄວາຍ", "en": "buffalo"},
+    {"lao": "ງົວ", "en": "cow"},
+    {"lao": "ຍຸງ", "en": "mosquito"}
+  ],
+  "body_parts": [
+    {"lao": "ຫາງ", "en": "tail"},
+    {"lao": "ຂາ", "en": "leg"},
+    {"lao": "ຕາ", "en": "eye", "note": "homonym: ຕາ also = Thai-loaned 'maternal grandfather' (avoid that use; see ພໍ່ຕູ້)"},
+    {"lao": "ຫູ", "en": "ear"},
+    {"lao": "ຜິວ", "en": "skin"},
+    {"lao": "ປາກ", "en": "mouth"},
+    {"lao": "ຕີນ", "en": "foot"},
+    {"lao": "ກະດູກ", "en": "bone"}
+  ],
+  "nature": [
+    {"lao": "ປ່າ", "en": "forest"},
+    {"lao": "ຕົ້ນໄມ້", "en": "tree"},
+    {"lao": "ຟ້າ", "en": "sky"},
+    {"lao": "ໄຮ່", "en": "field/farm"},
+    {"lao": "ຕາຝັ່ງ", "en": "riverbank"},
+    {"lao": "ດາວ", "en": "star"},
+    {"lao": "ສາຍນ້ຳ", "en": "stream/water flow"},
+    {"lao": "ຫຍ້າ", "en": "grass"},
+    {"lao": "ໄມ້", "en": "wood"},
+    {"lao": "ທໍາມະຊາດ", "en": "nature"},
+    {"lao": "ຕາເວັນ", "en": "sun"}
+  ],
+  "school": [
+    {"lao": "ໂຮງຮຽນ", "en": "school"},
+    {"lao": "ຫ້ອງຮຽນ", "en": "classroom"},
+    {"lao": "ນັກຮຽນ", "en": "student"},
+    {"lao": "ຄູ", "en": "teacher"},
+    {"lao": "ນາຍຄູ", "en": "teacher (male, respectful)"},
+    {"lao": "ບົດຮຽນ", "en": "lesson"},
+    {"lao": "ສົກຮຽນ", "en": "school year"},
+    {"lao": "ປຶ້ມ", "en": "book"},
+    {"lao": "ຄໍາສັບ", "en": "vocabulary"},
+    {"lao": "ໄວຍາກອນ", "en": "grammar"},
+    {"lao": "ຫົວບົດ", "en": "topic/heading"},
+    {"lao": "ປະໂຫຍກ", "en": "sentence"},
+    {"lao": "ວັກ", "en": "paragraph"},
+    {"lao": "ຕົວເລກ", "en": "number/numeral"},
+    {"lao": "ຫັດຂຽນ", "en": "writing practice"}
+  ],
+  "verbs": [
+    {"lao": "ຮຽນ", "en": "to study/learn"},
+    {"lao": "ຮູ້", "en": "to know"},
+    {"lao": "ຂັບ", "en": "to drive"},
+    {"lao": "ຢືນ", "en": "to stand"},
+    {"lao": "ຍ່າງ", "en": "to walk"},
+    {"lao": "ບິນ", "en": "to fly"},
+    {"lao": "ຍິ້ມ", "en": "to smile"},
+    {"lao": "ຫຼັບ", "en": "to sleep (close eyes)"},
+    {"lao": "ອາບນ້ຳ", "en": "to bathe"},
+    {"lao": "ຮັບ", "en": "to receive"},
+    {"lao": "ປູກ", "en": "to plant/grow"},
+    {"lao": "ຂຸດ", "en": "to dig"},
+    {"lao": "ຈູບ", "en": "to kiss"},
+    {"lao": "ຢຸດ", "en": "to stop"},
+    {"lao": "ຫຍິບ", "en": "to sew"}
+  ],
+  "objects_misc": [
+    {"lao": "ລົດ", "en": "car/vehicle"},
+    {"lao": "ລົດຖີບ", "en": "bicycle"},
+    {"lao": "ສະບູ", "en": "soap"},
+    {"lao": "ເສື້ອຜ້າ", "en": "clothes"},
+    {"lao": "ສຽງ", "en": "sound/voice"},
+    {"lao": "ຕຶກ", "en": "building"},
+    {"lao": "ທຸງ", "en": "flag"},
+    {"lao": "ມຸ້ງ", "en": "mosquito net"},
+    {"lao": "ຫິ້ງ", "en": "shelf"},
+    {"lao": "ໂມງ", "en": "clock/hour"}
+  ],
+  "adjectives": [
+    {"lao": "ສີ", "en": "color"},
+    {"lao": "ຍາວ", "en": "long"},
+    {"lao": "ສູງ", "en": "tall/high"},
+    {"lao": "ມືດ", "en": "dark"},
+    {"lao": "ຕື້ນ", "en": "shallow"},
+    {"lao": "ປອດໄພ", "en": "safe"}
+  ]
+}

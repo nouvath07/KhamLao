@@ -220,7 +220,7 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `น้ำมัน` | `ນ້ຳມັນ` | Oil. |
 | `ซีอิ๊ว` | `ຊີອິ້ວ` | Soy sauce. |
 | `ซอส` | `ຊອດ` | Sauce. |
-| `พริก` | `ໝາກພິກ` | Chili. |
+| `พริก` | `ໝາກເຜັດ` | Chili. (per Lao MOE ป.1 textbook; `ໝາກພິກ` is less common.) |
 | `พริกไทย` | `ພິກໄທ` | Pepper. |
 | `กระเทียม` | `ກະທຽມ` | Garlic. |
 | `หอม` | `ຫອມ` | Onion/Shallot/Fragrant. |
@@ -297,6 +297,123 @@ Bootstrapped via Gemini CLI on 2026-05-23 (226 entries). Community corrections w
 | `แกงเขียวหวาน` | `ແກງຂຽວຫວານ` | Green curry. |
 | `ผัดไทย` | `ຜັດໄທ` | Pad Thai. |
 | `ข้าวเหนียวมะม่วง` | `ເຂົ້າໜຽວໝາກມ່ວງ` | Mango sticky rice. |
+
+### 5b. Domain glossaries (from Lao MOE primary school textbooks)
+
+Source: Lao MOE textbooks (ພາສາລາວ ປ.1 ເຫຼັ້ມ 1 (LaoG1 Tb1) — 150 pages, ພາສາລາວ ປ.2 (LaoG2 TB1) — pages 1-50, ພາສາລາວ ປ.4 (Lao_4) — partial). Sourced from native-speaker educators — Lao-authoritative. English glosses are best-effort; corrections welcome via PR.
+
+#### Animals (ສັດ)
+
+| Lao | English | Note |
+|---|---|---|
+| `ເສືອ` | tiger |  |
+| `ໝາ` | dog |  |
+| `ງູ` | snake |  |
+| `ເຕົ່າ` | turtle |  |
+| `ລີງ` | monkey |  |
+| `ແຮດ` | rhinoceros |  |
+| `ນົກ` | bird |  |
+| `ມ້າ` | horse |  |
+| `ກາ` | crow |  |
+| `ຊ້າງ` | elephant |  |
+| `ຄວາຍ` | buffalo |  |
+| `ງົວ` | cow |  |
+| `ຍຸງ` | mosquito |  |
+
+#### Body parts (ສ່ວນຮ່າງກາຍ)
+
+| Lao | English | Note |
+|---|---|---|
+| `ຫາງ` | tail |  |
+| `ຂາ` | leg |  |
+| `ຕາ` | eye | homonym: ຕາ also = Thai-loaned 'maternal grandfather' (avoid that use; see ພໍ່ຕູ້) |
+| `ຫູ` | ear |  |
+| `ຜິວ` | skin |  |
+| `ປາກ` | mouth |  |
+| `ຕີນ` | foot |  |
+| `ກະດູກ` | bone |  |
+
+#### Nature (ທໍາມະຊາດ)
+
+| Lao | English | Note |
+|---|---|---|
+| `ປ່າ` | forest |  |
+| `ຕົ້ນໄມ້` | tree |  |
+| `ຟ້າ` | sky |  |
+| `ໄຮ່` | field/farm |  |
+| `ຕາຝັ່ງ` | riverbank |  |
+| `ດາວ` | star |  |
+| `ສາຍນ້ຳ` | stream/water flow |  |
+| `ຫຍ້າ` | grass |  |
+| `ໄມ້` | wood |  |
+| `ທໍາມະຊາດ` | nature |  |
+| `ຕາເວັນ` | sun |  |
+
+#### School (ໂຮງຮຽນ)
+
+| Lao | English | Note |
+|---|---|---|
+| `ໂຮງຮຽນ` | school |  |
+| `ຫ້ອງຮຽນ` | classroom |  |
+| `ນັກຮຽນ` | student |  |
+| `ຄູ` | teacher |  |
+| `ນາຍຄູ` | teacher (male, respectful) |  |
+| `ບົດຮຽນ` | lesson |  |
+| `ສົກຮຽນ` | school year |  |
+| `ປຶ້ມ` | book |  |
+| `ຄໍາສັບ` | vocabulary |  |
+| `ໄວຍາກອນ` | grammar |  |
+| `ຫົວບົດ` | topic/heading |  |
+| `ປະໂຫຍກ` | sentence |  |
+| `ວັກ` | paragraph |  |
+| `ຕົວເລກ` | number/numeral |  |
+| `ຫັດຂຽນ` | writing practice |  |
+
+#### Verbs
+
+| Lao | English | Note |
+|---|---|---|
+| `ຮຽນ` | to study/learn |  |
+| `ຮູ້` | to know |  |
+| `ຂັບ` | to drive |  |
+| `ຢືນ` | to stand |  |
+| `ຍ່າງ` | to walk |  |
+| `ບິນ` | to fly |  |
+| `ຍິ້ມ` | to smile |  |
+| `ຫຼັບ` | to sleep (close eyes) |  |
+| `ອາບນ້ຳ` | to bathe |  |
+| `ຮັບ` | to receive |  |
+| `ປູກ` | to plant/grow |  |
+| `ຂຸດ` | to dig |  |
+| `ຈູບ` | to kiss |  |
+| `ຢຸດ` | to stop |  |
+| `ຫຍິບ` | to sew |  |
+
+#### Objects (miscellaneous)
+
+| Lao | English | Note |
+|---|---|---|
+| `ລົດ` | car/vehicle |  |
+| `ລົດຖີບ` | bicycle |  |
+| `ສະບູ` | soap |  |
+| `ເສື້ອຜ້າ` | clothes |  |
+| `ສຽງ` | sound/voice |  |
+| `ຕຶກ` | building |  |
+| `ທຸງ` | flag |  |
+| `ມຸ້ງ` | mosquito net |  |
+| `ຫິ້ງ` | shelf |  |
+| `ໂມງ` | clock/hour |  |
+
+#### Adjectives
+
+| Lao | English | Note |
+|---|---|---|
+| `ສີ` | color |  |
+| `ຍາວ` | long |  |
+| `ສູງ` | tall/high |  |
+| `ມືດ` | dark |  |
+| `ຕື້ນ` | shallow |  |
+| `ປອດໄພ` | safe |  |
 
 ### 6. Foreign words → ທັບສັບ (transliterate)
 
