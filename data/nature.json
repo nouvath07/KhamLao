@@ -1,0 +1,168 @@
+{
+  "animals": [
+    {
+      "lao": "ເສືອ",
+      "en": "tiger",
+      "note": ""
+    },
+    {
+      "lao": "ໝາ",
+      "en": "dog",
+      "note": ""
+    },
+    {
+      "lao": "ງູ",
+      "en": "snake",
+      "note": ""
+    },
+    {
+      "lao": "ເຕົ່າ",
+      "en": "turtle",
+      "note": ""
+    },
+    {
+      "lao": "ລີງ",
+      "en": "monkey",
+      "note": ""
+    },
+    {
+      "lao": "ແຮດ",
+      "en": "rhinoceros",
+      "note": ""
+    },
+    {
+      "lao": "ນົກ",
+      "en": "bird",
+      "note": ""
+    },
+    {
+      "lao": "ມ້າ",
+      "en": "horse",
+      "note": ""
+    },
+    {
+      "lao": "ກາ",
+      "en": "crow",
+      "note": ""
+    },
+    {
+      "lao": "ຊ້າງ",
+      "en": "elephant",
+      "note": ""
+    },
+    {
+      "lao": "ຄວາຍ",
+      "en": "buffalo",
+      "note": ""
+    },
+    {
+      "lao": "ງົວ",
+      "en": "cow",
+      "note": ""
+    },
+    {
+      "lao": "ຍຸງ",
+      "en": "mosquito",
+      "note": ""
+    }
+  ],
+  "body_parts": [
+    {
+      "lao": "ຫາງ",
+      "en": "tail",
+      "note": ""
+    },
+    {
+      "lao": "ຂາ",
+      "en": "leg",
+      "note": ""
+    },
+    {
+      "lao": "ຕາ",
+      "en": "eye",
+      "note": "homonym: ຕາ also = Thai-loaned 'maternal grandfather' (avoid that use; see ພໍ່ຕູ້)"
+    },
+    {
+      "lao": "ຫູ",
+      "en": "ear",
+      "note": ""
+    },
+    {
+      "lao": "ຜິວ",
+      "en": "skin",
+      "note": ""
+    },
+    {
+      "lao": "ປາກ",
+      "en": "mouth",
+      "note": ""
+    },
+    {
+      "lao": "ຕີນ",
+      "en": "foot",
+      "note": ""
+    },
+    {
+      "lao": "ກະດູກ",
+      "en": "bone",
+      "note": ""
+    }
+  ],
+  "nature": [
+    {
+      "lao": "ປ່າ",
+      "en": "forest",
+      "note": ""
+    },
+    {
+      "lao": "ຕົ້ນໄມ້",
+      "en": "tree",
+      "note": ""
+    },
+    {
+      "lao": "ຟ້າ",
+      "en": "sky",
+      "note": ""
+    },
+    {
+      "lao": "ໄຮ່",
+      "en": "field/farm",
+      "note": ""
+    },
+    {
+      "lao": "ຕາຝັ່ງ",
+      "en": "riverbank",
+      "note": ""
+    },
+    {
+      "lao": "ດາວ",
+      "en": "star",
+      "note": ""
+    },
+    {
+      "lao": "ສາຍນ້ຳ",
+      "en": "stream/water flow",
+      "note": ""
+    },
+    {
+      "lao": "ຫຍ້າ",
+      "en": "grass",
+      "note": ""
+    },
+    {
+      "lao": "ໄມ້",
+      "en": "wood",
+      "note": ""
+    },
+    {
+      "lao": "ທໍາມະຊາດ",
+      "en": "nature",
+      "note": ""
+    },
+    {
+      "lao": "ຕາເວັນ",
+      "en": "sun",
+      "note": ""
+    }
+  ]
+}

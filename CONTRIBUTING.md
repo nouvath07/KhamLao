@@ -48,13 +48,27 @@ README.md and CONTRIBUTING.md are currently in English/Thai. Lao translations we
    ```bash
    git checkout -b add-cooking-vocab
    ```
-4. **Make your changes** — edit `skills/khamlao/SKILL.md` (or whichever file).
-5. **Verify** your changes don't accidentally include Thai script where Lao is expected (visually similar characters: ก vs ກ, ข vs ຂ, etc.).
-6. **Commit**:
+4. **Edit the source data — NOT the generated skill files.**
+
+   Source-of-truth lives in `data/*.json`. The `skills/*/SKILL.md` files are auto-generated.
+   - Adding/fixing cooking vocab → edit `data/cooking.json`
+   - Fixing a critical false-friend → edit `data/critical_fixes.json`
+   - Adding a new animal → edit `data/nature.json` (animals section)
+   - Adding everyday word → edit `data/everyday.json`
+   - Adding school vocab → edit `data/school.json`
+
+5. **Regenerate the skill files**:
    ```bash
-   git commit -m "Add cooking vocabulary (10 entries)"
+   python tools/build_skills.py
    ```
-7. **Push and open a PR** on GitHub.
+   This updates all `skills/*/SKILL.md` files from the current `data/*.json`.
+
+6. **Verify** your changes don't accidentally include Thai script where Lao is expected (visually similar characters: ก vs ກ, ข vs ຂ, etc.).
+7. **Commit BOTH the data change AND the regenerated skill file**:
+   ```bash
+   git commit -am "Add 10 cooking vocab entries"
+   ```
+8. **Push and open a PR** on GitHub.
 
 ---
 

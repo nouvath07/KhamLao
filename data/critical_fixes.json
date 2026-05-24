@@ -1,0 +1,50 @@
+{
+  "entries": [
+    {
+      "thai": "จะ",
+      "lao": "ສິ",
+      "note": "Most common Claude leak — Thai future marker leaks into Lao"
+    },
+    {
+      "thai": "ใคร",
+      "lao": "ໃຜ",
+      "note": ""
+    },
+    {
+      "thai": "ที่ไหน",
+      "lao": "ໃສ",
+      "note": ""
+    },
+    {
+      "thai": "อะไร",
+      "lao": "ຫຍັງ",
+      "note": ""
+    },
+    {
+      "thai": "ขอบคุณ",
+      "lao": "ຂອບໃຈ",
+      "note": ""
+    },
+    {
+      "thai": "ไม่",
+      "lao": "ບໍ່",
+      "note": ""
+    },
+    {
+      "thai": "ทำ",
+      "lao": "ເຮັດ",
+      "note": ""
+    },
+    {
+      "thai": "เป็น",
+      "lao": "ແມ່ນ",
+      "note": ""
+    },
+    {
+      "thai": "เท่าไหร่",
+      "lao": "ເທົ່າໃດ",
+      "note": "",
+      "lao_alt": "ທໍ່ໃດ"
+    }
+  ]
+}

@@ -1,15 +1,29 @@
 # KhamLao (ຄຳລາວ)
 
-**Lao language quality + compression mode for Claude.**
+**Modular Lao language skill for Claude.**
 
 KhamLao makes Claude write authentic, concise Lao instead of slow Thai-influenced verbose text. It cuts ~40-60% of output tokens while enforcing correct Lao register, script, and idiom.
 
-Inspired by [pordee](https://github.com/kerlos/pordee) (Thai compression skill), KhamLao adds **Lao-specific quality rules** on top of compression, because Claude's Lao output often suffers from two compounding issues:
+Inspired by [pordee](https://github.com/kerlos/pordee) (Thai compression skill), KhamLao adds Lao-specific quality rules on top of compression.
 
-1. **Slow generation** — Lao tokenizes to ~5-10× more tokens than English (UTF-8 3 bytes/char + combining marks + low-resource tokenizer)
-2. **Thai-influenced or archaic Lao** — wrong tense markers (ຈະ instead of ສິ), outdated pronouns (ຂ້ານ້ອຍ), Thai vocabulary leaking in
+---
 
-KhamLao fixes both.
+## v1.0 — Modular architecture
+
+KhamLao is split into 5 skills. The **core** is always active when writing Lao; **4 domain glossaries** auto-load by context to keep memory usage low.
+
+```
+khamlao                  Core: rules + critical false-friends         (~5 KB, always on)
+├─ khamlao-everyday      Time, family, numbers, common verbs/adj      (~9 KB, daily chat)
+├─ khamlao-cooking       Food, herbs, methods, utensils, dishes       (~6 KB, food context)
+├─ khamlao-school        Education vocabulary                          (~1 KB, school context)
+└─ khamlao-nature        Animals, body parts, nature                   (~2 KB, animal/nature context)
+```
+
+**Total vocabulary: 314 entries** across rules + 4 domains, sourced from:
+- Gemini CLI bootstrap (verified Lao output)
+- Native-speaker reviewer (@nouvath07)
+- Lao MOE primary school textbooks (ປ.1, ປ.2, ປ.4)
 
 ---
 
@@ -25,12 +39,14 @@ claude plugin install khamlao@khamlao
 ### Via `npx skills add`
 
 ```bash
-npx skills add https://github.com/nouvath07/khamlao --skill khamlao
+npx skills add https://github.com/nouvath07/KhamLao --skill khamlao
 ```
+
+This installs all 5 skills (core + 4 domains) to your universal agents directory.
 
 ### Manual
 
-Copy `skills/khamlao/SKILL.md` to `~/.claude/skills/khamlao/SKILL.md`.
+Copy `skills/*` to your `~/.claude/skills/`.
 
 ---
 
@@ -57,91 +73,100 @@ Copy `skills/khamlao/SKILL.md` to `~/.claude/skills/khamlao/SKILL.md`.
 
 ---
 
-## What KhamLao does
+## How auto-loading works
 
-### Quality (always when writing Lao)
+The **core** skill (`khamlao`) is always loaded when Lao output is requested. It contains:
+- 7 quality rules (script, register, tense, tone, no Thai-isms, transliteration, technical IDs)
+- 9 critical false-friends (most common Claude leaks)
+- Compression rules
+
+The **domain glossaries** load only when relevant:
+- Ask about cooking → `khamlao-cooking` auto-loads
+- Ask about school → `khamlao-school` auto-loads
+- Talk about animals → `khamlao-nature` auto-loads
+- General conversation → `khamlao-everyday` auto-loads
+
+This keeps the always-loaded footprint small (~5 KB) while making the full vocabulary (~25 KB) available when needed.
+
+---
+
+## Quality
+
+### Quality rules (always when writing Lao)
 
 - **Lao script only** — never substitutes Thai characters
 - **Modern register** — `ຂ້ອຍ`/`ເຈົ້າ` for conversation; never archaic `ຂ້ານ້ອຍ`
 - **Correct tense** — `ສິ` for future (not Thai-influenced `ຈະ`)
-- **Lao tone marks only** — `່` and `້` (no `໊`/`໋` in native Lao)
+- **Lao tone marks only** — `່` and `້`
 - **No Thai-isms** — `ໃຜ` not `ใคร`, `ໃສ` not `ที่ไหน`, `ບໍ່` not `ไม่`
-- **Foreign words → ທັບສັບ** (transliteration) — `ໄຟລ໌`, `ເຊັດຊັນ`, `ຄອມພິວເຕີ້`
+- **Foreign words → ທັບສັບ** — `ໄຟລ໌`, `ເຊັດຊັນ`, `ຄອມພິວເຕີ້`
 
 ### Compression (token savings)
 
 - Drops politeness particles, hedging, fillers, pleasantries
 - Verbose → terse swaps (e.g., `ເນື່ອງຈາກ` → `ເພາະ`)
 - Two levels: `lite` (gentle) and `full` (aggressive)
-- Allows sentence fragments in `full` mode
 
 ### Safety boundaries (NEVER compressed)
 
 - Code blocks, error messages, stack traces — verbatim
 - File paths, URLs, identifiers — verbatim
 - Security warnings, irreversible commands — written in clear standard Lao
-- Multi-step sequences requiring order — written clearly
 
 ---
 
-## Example token savings
+## Repo structure
 
-### Tech question
+```
+khamlao/
+├── data/                    ← Source-of-truth (edit here)
+│   ├── critical_fixes.json
+│   ├── everyday.json
+│   ├── cooking.json
+│   ├── school.json
+│   └── nature.json
+├── skills/                  ← Generated (do not edit directly)
+│   ├── khamlao/SKILL.md
+│   ├── khamlao-everyday/SKILL.md
+│   ├── khamlao-cooking/SKILL.md
+│   ├── khamlao-school/SKILL.md
+│   └── khamlao-nature/SKILL.md
+├── tools/
+│   ├── build_skills.py      ← Generate SKILL.md from data/
+│   └── archive/             ← Historical one-off scripts
+├── .claude-plugin/          ← Plugin metadata
+├── .github/                 ← Issue & PR templates
+├── README.md, CONTRIBUTING.md, LICENSE
+```
 
-**Q**: "ເປັນຫຍັງ React component ຈິ່ງ re-render?"
+### To add or fix vocabulary
 
-| Mode | Tokens | Response |
-|---|---|---|
-| normal | ~75 | (verbose with politeness, hedging, full sentences) |
-| khamlao lite | ~38 | "React component re-render ເພາະສົ່ງ object ref ໃໝ່ເປັນ prop ທຸກຄັ້ງທີ່ render. ລອງໃຊ້ useMemo." |
-| khamlao full | ~16 | "Object ref ໃໝ່ທຸກ render. Inline prop = ref ໃໝ່ = re-render. ຫໍ້ດ້ວຍ `useMemo`." |
-
-**Savings: ~78% in full mode**
-
-### Daily question
-
-**Q**: "ໄປຈຳປາສັກເດືອນໃດດີ?"
-
-| Mode | Tokens |
-|---|---|
-| normal | ~70 |
-| khamlao full | ~10 |
-
-**Savings: ~86%**
-
----
-
-## Comparison with pordee
-
-| | pordee | KhamLao |
-|---|---|---|
-| Language | Thai | Lao |
-| Compression | ✅ | ✅ |
-| Quality rules (script, register) | ❌ | ✅ |
-| Foreign-word transliteration | ❌ | ✅ |
-| Auto-clarity for risky ops | ✅ | ✅ |
-| Architecture | Full plugin (hooks + state + stats) | Skill-only (v1) |
-
-KhamLao v1 focuses on the **skill content** — the rules Claude follows. Future versions may add hooks, persistent state, and `/khamlao-stats` like pordee.
+1. Edit the relevant `data/*.json` file
+2. Run `python tools/build_skills.py`
+3. Commit both the `data/` change and the regenerated `skills/*/SKILL.md`
 
 ---
 
 ## Contributing
 
-KhamLao is community-driven. **Native and fluent Lao speakers — your help is essential.** Claude's Lao training is limited, and the skill works best when the community contributes:
+KhamLao is community-driven. **Native and fluent Lao speakers — your help is essential.**
 
-- 🐛 **Report Thai-influenced output** — when Claude leaks Thai vocabulary/script into Lao
+- 🐛 **Report Thai-influenced output** — when Claude leaks Thai vocabulary/script
 - 📚 **Add vocabulary** — Thai → Lao mappings the current rules miss
-- 🌾 **Add domain glossaries** — cooking, tech, medical, agriculture, etc.
-- 📝 **Fix register/tone errors** — improve the rule set
+- 🌾 **Add domain glossaries** — propose new domains beyond the current 4
+- 📝 **Fix register/tone errors**
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details. You don't need to be a programmer — language data contributions are most valuable.
+See [CONTRIBUTING.md](CONTRIBUTING.md). You don't need to be a programmer — language data is most valuable.
+
+---
 
 ## Known limitations
 
-- Claude's Lao training data is **significantly weaker** than its English/Thai/Chinese. Even with KhamLao active, output may still leak Thai vocabulary in specialized domains (cooking ingredients, technical terms, regional words).
-- The vocabulary table in `SKILL.md` currently covers ~15 common words. Expansion is community-driven via PRs.
-- Lao has regional variations; the skill currently targets standard Vientiane Lao. Regional alternatives can be added via contribution.
+- Claude's Lao training data is significantly weaker than English/Thai/Chinese. Domain glossaries help but the skill works best paired with Gemini CLI (which has stronger native Lao).
+- Skill auto-loading by context is heuristic — sometimes a domain glossary won't load when you expect it. Use the `/khamlao` trigger to force the core skill.
+- Vocabulary is targeted at Vientiane standard Lao. Regional variants (Luang Prabang, Champasak) can be added via contribution.
+
+---
 
 ## License
 

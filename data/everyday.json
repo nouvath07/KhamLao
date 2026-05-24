@@ -1,0 +1,872 @@
+{
+  "entries": [
+    {
+      "thai": "ใคร",
+      "lao": "ໃຜ",
+      "note": ""
+    },
+    {
+      "thai": "ที่ไหน",
+      "lao": "ໃສ",
+      "note": ""
+    },
+    {
+      "thai": "อะไร",
+      "lao": "ຫຍັງ",
+      "note": ""
+    },
+    {
+      "thai": "ขอบคุณ",
+      "lao": "ຂອບໃຈ",
+      "note": ""
+    },
+    {
+      "thai": "ไม่",
+      "lao": "ບໍ່",
+      "note": ""
+    },
+    {
+      "thai": "ทำ",
+      "lao": "ເຮັດ",
+      "note": ""
+    },
+    {
+      "thai": "ครับ",
+      "lao": "ໂດຍ/ເຈົ້າ",
+      "note": "Politeness particle (male). Use 'ໂດຍ' for formal."
+    },
+    {
+      "thai": "ค่ะ",
+      "lao": "ໂດຍ/ເຈົ້າ",
+      "note": "Politeness particle (female)."
+    },
+    {
+      "thai": "คุณ",
+      "lao": "ເຈົ້າ",
+      "note": "You (polite/general)."
+    },
+    {
+      "thai": "ผม",
+      "lao": "ຂ້ອຍ",
+      "note": "I (male, polite). 'ຂ້ອຍ' is standard for both."
+    },
+    {
+      "thai": "ฉัน",
+      "lao": "ຂ້ອຍ",
+      "note": "I (female, polite)."
+    },
+    {
+      "thai": "เรา",
+      "lao": "ເຮົາ",
+      "note": "We/Us."
+    },
+    {
+      "thai": "พวกเรา",
+      "lao": "ພວກເຮົາ",
+      "note": "We (group)."
+    },
+    {
+      "thai": "ใช่",
+      "lao": "ແມ່ນ",
+      "note": "Yes/Correct."
+    },
+    {
+      "thai": "ไม่",
+      "lao": "ບໍ່",
+      "note": "No/Not."
+    },
+    {
+      "thai": "ไหม",
+      "lao": "ບໍ",
+      "note": "Question particle (no tone — distinct from `ບໍ່` \"not\")."
+    },
+    {
+      "thai": "นะ",
+      "lao": "ເດີ/ນາ",
+      "note": "Particle for emphasis/softening."
+    },
+    {
+      "thai": "ด้วย",
+      "lao": "ແດ່/ດ້ວຍ",
+      "note": "Also/With."
+    },
+    {
+      "thai": "หรือ",
+      "lao": "ຫຼື",
+      "note": "Or."
+    },
+    {
+      "thai": "และ",
+      "lao": "ແລະ",
+      "note": "And."
+    },
+    {
+      "thai": "แต่",
+      "lao": "ແຕ່",
+      "note": "But."
+    },
+    {
+      "thai": "ขอบคุณ",
+      "lao": "ຂອບໃຈ",
+      "note": "Thank you."
+    },
+    {
+      "thai": "ขอโทษ",
+      "lao": "ຂໍໂທດ",
+      "note": "Sorry/Excuse me."
+    },
+    {
+      "thai": "สวัสดี",
+      "lao": "ສະບາຍດີ",
+      "note": "Hello."
+    },
+    {
+      "thai": "ลาก่อน",
+      "lao": "ລາກ່ອນ",
+      "note": "Goodbye."
+    },
+    {
+      "thai": "ยินดีที่ได้รู้จัก",
+      "lao": "ຍິນດີທີ່ໄດ້ຮູ້ຈັກ",
+      "note": "Nice to meet you."
+    },
+    {
+      "thai": "ใคร",
+      "lao": "ໃຜ",
+      "note": "Who."
+    },
+    {
+      "thai": "อะไร",
+      "lao": "ຫຍັງ",
+      "note": "What."
+    },
+    {
+      "thai": "ที่ไหน",
+      "lao": "ໃສ",
+      "note": "Where."
+    },
+    {
+      "thai": "เมื่อไหร่",
+      "lao": "ຍາມໃດ",
+      "note": "When."
+    },
+    {
+      "thai": "ทำไม",
+      "lao": "ເປັນຫຍັງ",
+      "note": "Why."
+    },
+    {
+      "thai": "อย่างไร",
+      "lao": "ແນວໃດ",
+      "note": "How."
+    },
+    {
+      "thai": "เท่าไหร่",
+      "lao": "ທໍ່ໃດ",
+      "note": "How much."
+    },
+    {
+      "thai": "วันนี้",
+      "lao": "ມື້ນີ້",
+      "note": "Today."
+    },
+    {
+      "thai": "พรุ่งนี้",
+      "lao": "ມື້ອື່ນ",
+      "note": "Tomorrow."
+    },
+    {
+      "thai": "เมื่อวาน",
+      "lao": "ມື້ວານນີ້",
+      "note": "Yesterday."
+    },
+    {
+      "thai": "ตอนนี้",
+      "lao": "ຕອນນີ້",
+      "note": "Now."
+    },
+    {
+      "thai": "ภายหลัง",
+      "lao": "ພາຍຫຼັງ",
+      "note": "Later/Afterwards."
+    },
+    {
+      "thai": "เร็วๆ นี้",
+      "lao": "ໄວໆນີ້",
+      "note": "Soon."
+    },
+    {
+      "thai": "เช้า",
+      "lao": "ເຊົ້າ",
+      "note": "Morning."
+    },
+    {
+      "thai": "บ่าย",
+      "lao": "ສວາຍ",
+      "note": "Afternoon. ❌ Avoid `ບ່າຍ` (Thai loanword)."
+    },
+    {
+      "thai": "เย็น",
+      "lao": "ແລງ",
+      "note": "Evening."
+    },
+    {
+      "thai": "กลางคืน",
+      "lao": "ກາງຄືນ",
+      "note": "Night."
+    },
+    {
+      "thai": "เที่ยง",
+      "lao": "ທ່ຽງ",
+      "note": "Noon."
+    },
+    {
+      "thai": "หนึ่ง",
+      "lao": "ໜຶ່ງ",
+      "note": "One."
+    },
+    {
+      "thai": "สอง",
+      "lao": "ສອງ",
+      "note": "Two."
+    },
+    {
+      "thai": "สาม",
+      "lao": "ສາມ",
+      "note": "Three."
+    },
+    {
+      "thai": "สี่",
+      "lao": "ສີ່",
+      "note": "Four."
+    },
+    {
+      "thai": "ห้า",
+      "lao": "ຫ້າ",
+      "note": "Five."
+    },
+    {
+      "thai": "หก",
+      "lao": "ຫົກ",
+      "note": "Six."
+    },
+    {
+      "thai": "เจ็ด",
+      "lao": "ເຈັດ",
+      "note": "Seven."
+    },
+    {
+      "thai": "แปด",
+      "lao": "ແປດ",
+      "note": "Eight."
+    },
+    {
+      "thai": "เก้า",
+      "lao": "ເກົ້າ",
+      "note": "Nine."
+    },
+    {
+      "thai": "สิบ",
+      "lao": "ສິບ",
+      "note": "Ten."
+    },
+    {
+      "thai": "ร้อย",
+      "lao": "ຮ້ອຍ",
+      "note": "Hundred."
+    },
+    {
+      "thai": "พัน",
+      "lao": "ພັນ",
+      "note": "Thousand."
+    },
+    {
+      "thai": "หมื่น",
+      "lao": "ໝື່ນ",
+      "note": "Ten thousand."
+    },
+    {
+      "thai": "แสน",
+      "lao": "ແສນ",
+      "note": "Hundred thousand."
+    },
+    {
+      "thai": "ล้าน",
+      "lao": "ລ້ານ",
+      "note": "Million."
+    },
+    {
+      "thai": "พ่อ",
+      "lao": "ພໍ່",
+      "note": "Father."
+    },
+    {
+      "thai": "แม่",
+      "lao": "ແມ່",
+      "note": "Mother."
+    },
+    {
+      "thai": "ลูก",
+      "lao": "ລູກ",
+      "note": "Child."
+    },
+    {
+      "thai": "พี่",
+      "lao": "ອ້າຍ/ເອື້ອຍ",
+      "note": "Older brother/sister."
+    },
+    {
+      "thai": "น้อง",
+      "lao": "ນ້ອງ",
+      "note": "Younger sibling."
+    },
+    {
+      "thai": "ปู่",
+      "lao": "ປູ່",
+      "note": "Paternal grandfather."
+    },
+    {
+      "thai": "ย่า",
+      "lao": "ຍ່າ",
+      "note": "Paternal grandmother."
+    },
+    {
+      "thai": "ตา",
+      "lao": "ພໍ່ຕູ້",
+      "note": "Maternal grandfather. Vientiane standard. Variants: `ພໍ່ເຖົ້າ`. ❌ Avoid `ຕາ` (Thai loanword)."
+    },
+    {
+      "thai": "ยาย",
+      "lao": "ແມ່ຕູ້",
+      "note": "Maternal grandmother. Vientiane standard. Variants: `ແມ່ເຖົ້າ`. ❌ Avoid `ຍາຍ` (Thai loanword)."
+    },
+    {
+      "thai": "ลุง",
+      "lao": "ລຸງ",
+      "note": "Uncle (older)."
+    },
+    {
+      "thai": "ป้า",
+      "lao": "ປ້າ",
+      "note": "Aunt (older)."
+    },
+    {
+      "thai": "น้า",
+      "lao": "ນ້າ",
+      "note": "Maternal aunt/uncle (younger)."
+    },
+    {
+      "thai": "อา",
+      "lao": "ອາ",
+      "note": "Paternal aunt/uncle (younger)."
+    },
+    {
+      "thai": "หลาน",
+      "lao": "ຫຼານ",
+      "note": "Grandchild/Niece/Nephew."
+    },
+    {
+      "thai": "ผู้ชาย",
+      "lao": "ຜູ້ຊາຍ",
+      "note": "Man."
+    },
+    {
+      "thai": "ผู้หญิง",
+      "lao": "ຜູ້ຍິງ",
+      "note": "Woman."
+    },
+    {
+      "thai": "เด็ก",
+      "lao": "ເດັກນ້ອຍ",
+      "note": "Child/Kid."
+    },
+    {
+      "thai": "ผู้ใหญ่",
+      "lao": "ຜູ້ໃຫຍ່",
+      "note": "Adult."
+    },
+    {
+      "thai": "คน",
+      "lao": "ຄົນ",
+      "note": "Person."
+    },
+    {
+      "thai": "เพื่อน",
+      "lao": "ໝູ່",
+      "note": "Friend."
+    },
+    {
+      "thai": "บ้าน",
+      "lao": "ເຮືອນ",
+      "note": "House/Home."
+    },
+    {
+      "thai": "ห้อง",
+      "lao": "ຫ້ອງ",
+      "note": "Room."
+    },
+    {
+      "thai": "ห้องน้ำ",
+      "lao": "ຫ້ອງນ້ຳ",
+      "note": "Bathroom."
+    },
+    {
+      "thai": "ครัว",
+      "lao": "ເຮືອນຄົວ",
+      "note": "Kitchen."
+    },
+    {
+      "thai": "โต๊ะ",
+      "lao": "ໂຕະ",
+      "note": "Table."
+    },
+    {
+      "thai": "เก้าอี้",
+      "lao": "ຕັ່ງ",
+      "note": "Chair."
+    },
+    {
+      "thai": "เตียง",
+      "lao": "ຕຽງ",
+      "note": "Bed."
+    },
+    {
+      "thai": "ประตู",
+      "lao": "ປະຕູ",
+      "note": "Door."
+    },
+    {
+      "thai": "หน้าต่าง",
+      "lao": "ປ່ອງຢ້ຽມ",
+      "note": "Window."
+    },
+    {
+      "thai": "ไป",
+      "lao": "ໄປ",
+      "note": "Go."
+    },
+    {
+      "thai": "มา",
+      "lao": "ມາ",
+      "note": "Come."
+    },
+    {
+      "thai": "อยู่",
+      "lao": "ຢູ່",
+      "note": "Stay/Be."
+    },
+    {
+      "thai": "ทำ",
+      "lao": "ເຮັດ",
+      "note": "Do/Make."
+    },
+    {
+      "thai": "กิน",
+      "lao": "ກິນ",
+      "note": "Eat."
+    },
+    {
+      "thai": "ดื่ม",
+      "lao": "ດື່ມ",
+      "note": "Drink."
+    },
+    {
+      "thai": "นอน",
+      "lao": "ນອນ",
+      "note": "Sleep."
+    },
+    {
+      "thai": "พูด",
+      "lao": "ເວົ້າ",
+      "note": "Speak/Talk."
+    },
+    {
+      "thai": "ฟัง",
+      "lao": "ຟັງ",
+      "note": "Listen."
+    },
+    {
+      "thai": "เห็น",
+      "lao": "ເຫັນ",
+      "note": "See."
+    },
+    {
+      "thai": "ดู",
+      "lao": "ເບິ່ງ",
+      "note": "Watch/Look."
+    },
+    {
+      "thai": "อ่าน",
+      "lao": "ອ່ານ",
+      "note": "Read."
+    },
+    {
+      "thai": "เขียน",
+      "lao": "ຂຽນ",
+      "note": "Write."
+    },
+    {
+      "thai": "ซื้อ",
+      "lao": "ຊື້",
+      "note": "Buy."
+    },
+    {
+      "thai": "ขาย",
+      "lao": "ຂາຍ",
+      "note": "Sell."
+    },
+    {
+      "thai": "ใหญ่",
+      "lao": "ໃຫຍ່",
+      "note": "Big."
+    },
+    {
+      "thai": "เล็ก",
+      "lao": "ນ້ອຍ",
+      "note": "Small."
+    },
+    {
+      "thai": "ดี",
+      "lao": "ດີ",
+      "note": "Good."
+    },
+    {
+      "thai": "ไม่ดี",
+      "lao": "ບໍ່ດີ",
+      "note": "Bad."
+    },
+    {
+      "thai": "สวย",
+      "lao": "ງາມ",
+      "note": "Beautiful."
+    },
+    {
+      "thai": "น่าเกลียด",
+      "lao": "ຂີ້ຮ້າຍ",
+      "note": "Ugly."
+    },
+    {
+      "thai": "ใหม่",
+      "lao": "ໃໝ່",
+      "note": "New."
+    },
+    {
+      "thai": "เก่า",
+      "lao": "ເກົ່າ",
+      "note": "Old."
+    },
+    {
+      "thai": "ร้อน",
+      "lao": "ຮ້ອນ",
+      "note": "Hot."
+    },
+    {
+      "thai": "เย็น",
+      "lao": "ເຢັນ",
+      "note": "Cold."
+    },
+    {
+      "thai": "หวาน",
+      "lao": "ຫວານ",
+      "note": "Sweet."
+    },
+    {
+      "thai": "เปรี้ยว",
+      "lao": "ສົ້ມ",
+      "note": "Sour."
+    },
+    {
+      "thai": "เค็ม",
+      "lao": "ເຄັມ",
+      "note": "Salty."
+    },
+    {
+      "thai": "เผ็ด",
+      "lao": "ເຜັດ",
+      "note": "Spicy."
+    },
+    {
+      "thai": "เร็ว",
+      "lao": "ໄວ",
+      "note": "Fast."
+    },
+    {
+      "thai": "ช้า",
+      "lao": "ຊ້າ",
+      "note": "Slow."
+    },
+    {
+      "thai": "ใกล้",
+      "lao": "ໃກ້",
+      "note": "Near."
+    },
+    {
+      "thai": "ไกล",
+      "lao": "ໄກ",
+      "note": "Far."
+    },
+    {
+      "thai": "มาก",
+      "lao": "ຫຼາຍ",
+      "note": "Very/Many."
+    },
+    {
+      "thai": "น้อย",
+      "lao": "ໜ້ອຍ",
+      "note": "Little/Few."
+    },
+    {
+      "thai": "หลาย",
+      "lao": "ຫຼາຍ",
+      "note": "Many."
+    },
+    {
+      "thai": "บาง",
+      "lao": "ບາງ",
+      "note": "Some."
+    },
+    {
+      "thai": "เงิน",
+      "lao": "ເງິນ",
+      "note": "Money."
+    },
+    {
+      "thai": "ราคา",
+      "lao": "ລາຄາ",
+      "note": "Price."
+    },
+    {
+      "thai": "แพง",
+      "lao": "ແພງ",
+      "note": "Expensive."
+    },
+    {
+      "thai": "ถูก",
+      "lao": "ຖືກ",
+      "note": "Cheap."
+    },
+    {
+      "thai": "รัก",
+      "lao": "ຮັກ",
+      "note": "Love."
+    },
+    {
+      "thai": "ชอบ",
+      "lao": "ມັກ",
+      "note": "Like."
+    },
+    {
+      "thai": "เกลียด",
+      "lao": "ຊັງ",
+      "note": "Hate."
+    },
+    {
+      "thai": "ดีใจ",
+      "lao": "ດີໃຈ",
+      "note": "Happy/Glad."
+    },
+    {
+      "thai": "เศร้า",
+      "lao": "ເສຍໃຈ",
+      "note": "Sad."
+    },
+    {
+      "thai": "โกรธ",
+      "lao": "ສູນ/ຄຽດ",
+      "note": "Angry."
+    },
+    {
+      "thai": "กลัว",
+      "lao": "ຢ້ານ",
+      "note": "Afraid."
+    },
+    {
+      "thai": "เหนื่อย",
+      "lao": "ເມື່ອຍ",
+      "note": "Tired."
+    },
+    {
+      "thai": "หิว",
+      "lao": "ຫິວ",
+      "note": "Hungry."
+    },
+    {
+      "thai": "อิ่ม",
+      "lao": "ອີ່ມ",
+      "note": "Full (stomach)."
+    },
+    {
+      "thai": "เจ็บ",
+      "lao": "ເຈັບ",
+      "note": "Hurt/Pain."
+    },
+    {
+      "thai": "ป่วย",
+      "lao": "ບໍ່ສະບາຍ",
+      "note": "Sick / unwell (general). ⚠️ `ໄຂ້` means \"fever\" specifically, not generic sickness."
+    }
+  ],
+  "extras": {
+    "verbs": [
+      {
+        "lao": "ຮຽນ",
+        "en": "to study/learn",
+        "note": ""
+      },
+      {
+        "lao": "ຮູ້",
+        "en": "to know",
+        "note": ""
+      },
+      {
+        "lao": "ຂັບ",
+        "en": "to drive",
+        "note": ""
+      },
+      {
+        "lao": "ຢືນ",
+        "en": "to stand",
+        "note": ""
+      },
+      {
+        "lao": "ຍ່າງ",
+        "en": "to walk",
+        "note": ""
+      },
+      {
+        "lao": "ບິນ",
+        "en": "to fly",
+        "note": ""
+      },
+      {
+        "lao": "ຍິ້ມ",
+        "en": "to smile",
+        "note": ""
+      },
+      {
+        "lao": "ຫຼັບ",
+        "en": "to sleep (close eyes)",
+        "note": ""
+      },
+      {
+        "lao": "ອາບນ້ຳ",
+        "en": "to bathe",
+        "note": ""
+      },
+      {
+        "lao": "ຮັບ",
+        "en": "to receive",
+        "note": ""
+      },
+      {
+        "lao": "ປູກ",
+        "en": "to plant/grow",
+        "note": ""
+      },
+      {
+        "lao": "ຂຸດ",
+        "en": "to dig",
+        "note": ""
+      },
+      {
+        "lao": "ຈູບ",
+        "en": "to kiss",
+        "note": ""
+      },
+      {
+        "lao": "ຢຸດ",
+        "en": "to stop",
+        "note": ""
+      },
+      {
+        "lao": "ຫຍິບ",
+        "en": "to sew",
+        "note": ""
+      }
+    ],
+    "objects": [
+      {
+        "lao": "ລົດ",
+        "en": "car/vehicle",
+        "note": ""
+      },
+      {
+        "lao": "ລົດຖີບ",
+        "en": "bicycle",
+        "note": ""
+      },
+      {
+        "lao": "ສະບູ",
+        "en": "soap",
+        "note": ""
+      },
+      {
+        "lao": "ເສື້ອຜ້າ",
+        "en": "clothes",
+        "note": ""
+      },
+      {
+        "lao": "ສຽງ",
+        "en": "sound/voice",
+        "note": ""
+      },
+      {
+        "lao": "ຕຶກ",
+        "en": "building",
+        "note": ""
+      },
+      {
+        "lao": "ທຸງ",
+        "en": "flag",
+        "note": ""
+      },
+      {
+        "lao": "ມຸ້ງ",
+        "en": "mosquito net",
+        "note": ""
+      },
+      {
+        "lao": "ຫິ້ງ",
+        "en": "shelf",
+        "note": ""
+      },
+      {
+        "lao": "ໂມງ",
+        "en": "clock/hour",
+        "note": ""
+      }
+    ],
+    "adjectives": [
+      {
+        "lao": "ສີ",
+        "en": "color",
+        "note": ""
+      },
+      {
+        "lao": "ຍາວ",
+        "en": "long",
+        "note": ""
+      },
+      {
+        "lao": "ສູງ",
+        "en": "tall/high",
+        "note": ""
+      },
+      {
+        "lao": "ມືດ",
+        "en": "dark",
+        "note": ""
+      },
+      {
+        "lao": "ຕື້ນ",
+        "en": "shallow",
+        "note": ""
+      },
+      {
+        "lao": "ປອດໄພ",
+        "en": "safe",
+        "note": ""
+      }
+    ]
+  }
+}

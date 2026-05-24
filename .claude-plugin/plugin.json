@@ -1,6 +1,6 @@
 {
   "name": "khamlao",
-  "description": "ຄຳລາວ (KhamLao) — Lao language quality + compression mode for Claude. Cuts ~40-60% tokens while enforcing correct Lao register, script, and idiom. (Inspired by pordee.)",
+  "description": "ຄຳລາວ (KhamLao) — Lao language quality + compression for Claude. Modular skills: core (rules + critical fixes, always-on) + everyday/cooking/school/nature glossaries (auto-load by context).",
   "author": {
     "name": "KhamLao Contributors"
   }
