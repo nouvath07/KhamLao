@@ -21,6 +21,22 @@ and are NOT part of the v1.0 build pipeline.
 - `vocab_table.md` — Intermediate generated table.
 - `textbook_vocab.json` — Original MOE textbook extraction. Now in data/nature.json + data/school.json + etc.
 
+## Experiments (rejected)
+
+- `spike_toon.py` — Tested [TOON format](https://github.com/toon-format/toon) as a more
+  token-efficient alternative to markdown tables. Measured on `khamlao-cooking` (90 entries):
+  - Markdown: 2,859 tokens / 4,069 chars
+  - TOON: 2,550 tokens / 3,382 chars
+  - Reduction: **-10.8% tokens** (vs TOON's claimed -39.9% on English JSON)
+
+  **Decision:** Rejected for now. The 11% savings doesn't justify the risk that
+  Claude/Gemini may misparse comma-separated Lao rows and degrade vocabulary
+  lookup accuracy. Lao characters dominate token count regardless of format;
+  TOON only compresses structural overhead which is already minor in our markdown.
+
+  Reconsider if: (a) we test TOON parsing accuracy with real LLMs and find no
+  regression, OR (b) future LLMs add explicit TOON parsing support.
+
 ## v1.0+ active pipeline
 
 The active build pipeline is:
