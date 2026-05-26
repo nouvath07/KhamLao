@@ -1,5 +1,11 @@
 # KhamLao (ຄຳລາວ)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
+[![Built for Claude](https://img.shields.io/badge/built%20for-Claude-orange)](https://www.anthropic.com/claude-code)
+[![Lao language](https://img.shields.io/badge/language-ລາວ-success)](https://en.wikipedia.org/wiki/Lao_language)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 **Modular Lao language skill for Claude.**
 
 KhamLao makes Claude write authentic, concise Lao instead of slow Thai-influenced verbose text. It cuts ~40-60% of output tokens while enforcing correct Lao register, script, and idiom.
@@ -165,6 +171,46 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). You don't need to be a programmer — la
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** — how the system works, data flow, schemas, build process
 - **[ROADMAP.md](ROADMAP.md)** — open tasks organized by impact and difficulty
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** — how to submit changes
+
+---
+
+## What's next
+
+KhamLao today is a **prompt-injected skill** — it corrects Claude/Gemini's Lao output at generation time. The next step is to make those same rules usable **outside** an LLM, as a standalone quality layer for any Lao NLP system:
+
+### 🔬 Quality / correctness layer (in design)
+
+A Python library + eval suite that any Lao OCR, TTS, or translation pipeline can call to check its own output. Three components:
+
+```
+┌─────────────────────────────────────────────┐
+│  Layer 3: Eval suite (benchmark runner)     │  → measure model output quality
+├─────────────────────────────────────────────┤
+│  Layer 2: Detector library (Python pkg)     │  → Thai-leak + register checks
+├─────────────────────────────────────────────┤
+│  Layer 1: Rules + test data (JSON)          │  → already 80% in data/*.json
+└─────────────────────────────────────────────┘
+```
+
+**Detector example:**
+```python
+from khamlao_checker import check
+check("ຂ້ອຍຈະໄປເຮັດວຽກ")
+# → {"thai_word_leaks": ["ຈະ"], "suggested": "ສິ",
+#    "register": "modern", "score": 0.72}
+```
+
+**Why it matters:** ML teams optimize average accuracy, but no one currently checks whether Lao output is *actually good Lao* — free of Thai-script leaks, archaic pronouns, or wrong tense markers. That gap is what KhamLao's rules already encode for LLMs; the next step is exposing them as a reusable checker.
+
+### 📚 Corpus pipeline (shipped, v1.1)
+
+`tools/scrape_lao_corpus.py` — download → render → Gemini OCR → quality-filter → JSONL. Used to harvest Lao text from MOE textbooks (ປ.1–ມ.7) for training and evaluation. See [data/corpora/README.md](data/corpora/README.md).
+
+### 🛣 Roadmap details
+
+See [ROADMAP.md](ROADMAP.md) — 6 themes, prioritized, with effort estimates. Contributors welcome at any tier of complexity.
+
+---
 
 ## Known limitations
 
