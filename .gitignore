@@ -13,3 +13,6 @@ skills-lock.json
 # Python
 __pycache__/
 *.pyc
+
+# Generated eval reports
+eval/reports/

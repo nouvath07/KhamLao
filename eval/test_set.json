@@ -1,0 +1,126 @@
+{
+  "version": "0.1",
+  "description": "KhamLao evaluation test set. Each test is a prompt plus assertions about the Lao output. The runner scores any model's response with khamlao_checker and checks expect_contains / forbid_contains.",
+  "tests": [
+    {
+      "id": "trans_001",
+      "category": "translation_th_lo",
+      "prompt": "แปลเป็นลาว: ไปไหน",
+      "expect_contains": ["ໃສ"],
+      "forbid_contains": ["ที่ไหน", "ໄຫນ"],
+      "note": "where = ໃສ, not Thai ที่ไหน / ໄຫນ"
+    },
+    {
+      "id": "trans_002",
+      "category": "translation_th_lo",
+      "prompt": "แปลเป็นลาว: ฉันจะไปทำงาน",
+      "expect_contains": ["ສິ", "ເຮັດ"],
+      "forbid_contains": ["ຈະ", "จะ", "ทำ"],
+      "note": "future = ສິ not ຈະ; to do = ເຮັດ not ທຳ/ทำ"
+    },
+    {
+      "id": "trans_003",
+      "category": "translation_th_lo",
+      "prompt": "แปลเป็นลาว: คุณชื่ออะไร",
+      "expect_contains": ["ຫຍັງ"],
+      "forbid_contains": ["อะไร", "ໄຫມ", "ไหม"],
+      "note": "what = ຫຍັງ"
+    },
+    {
+      "id": "trans_004",
+      "category": "translation_th_lo",
+      "prompt": "แปลเป็นลาว: ราคาเท่าไหร่",
+      "expect_contains": ["ເທົ່າໃດ"],
+      "forbid_contains": ["เท่าไหร่", "เท่าไร"],
+      "note": "how much = ເທົ່າໃດ (or ທໍ່ໃດ spoken)"
+    },
+    {
+      "id": "trans_005",
+      "category": "translation_th_lo",
+      "prompt": "แปลเป็นลาว: ขอบคุณมาก",
+      "expect_contains": ["ຂອບໃຈ"],
+      "forbid_contains": ["ขอบคุณ", "ຂອບຄຸນ"],
+      "note": "thank you = ຂອບໃຈ not ຂອບຄຸນ"
+    },
+    {
+      "id": "reg_001",
+      "category": "register",
+      "prompt": "เขียนประโยคแนะนำตัวเป็นภาษาลาวแบบสนทนาทั่วไป (ใช้สรรพนามบุรุษที่ 1)",
+      "expect_contains": ["ຂ້ອຍ"],
+      "forbid_contains": ["ຂ້ານ້ອຍ"],
+      "note": "conversational first person = ຂ້ອຍ, never archaic ຂ້ານ້ອຍ"
+    },
+    {
+      "id": "reg_002",
+      "category": "register",
+      "prompt": "เขียนคำกล่าวเปิดงานทางการเป็นภาษาลาว (สรรพนามบุรุษที่ 1 แบบทางการ)",
+      "expect_contains": ["ຂ້າພະເຈົ້າ"],
+      "forbid_contains": ["ຂ້ານ້ອຍ"],
+      "note": "formal speech first person = ຂ້າພະເຈົ້າ"
+    },
+    {
+      "id": "free_001",
+      "category": "freeform",
+      "prompt": "เขียนบรรยายสั้นๆ เกี่ยวกับนครหลวงเวียงจันทน์เป็นภาษาลาว 2-3 ประโยค",
+      "expect_contains": [],
+      "forbid_contains": [],
+      "note": "no Thai-script leak; checked by khamlao_checker score only"
+    },
+    {
+      "id": "free_002",
+      "category": "freeform",
+      "prompt": "เขียนเล่ากิจวัตรประจำวันของคุณเป็นภาษาลาว 3 ประโยค",
+      "expect_contains": [],
+      "forbid_contains": [],
+      "note": "freeform; score on Thai-leak + register"
+    },
+    {
+      "id": "cook_001",
+      "category": "domain_cooking",
+      "prompt": "แปลเป็นลาว: ผัดผักกับกระเทียม",
+      "expect_contains": ["ຂົ້ວ", "ກະທຽມ"],
+      "forbid_contains": ["ผัด", "กระเทียม"],
+      "note": "stir-fry = ຂົ້ວ; garlic = ກະທຽມ"
+    },
+    {
+      "id": "cook_002",
+      "category": "domain_cooking",
+      "prompt": "แปลเป็นลาว: ข้าวเหนียว",
+      "expect_contains": ["ເຂົ້າໜຽວ"],
+      "forbid_contains": ["ข้าวเหนียว"],
+      "note": "sticky rice = ເຂົ້າໜຽວ"
+    },
+    {
+      "id": "school_001",
+      "category": "domain_school",
+      "prompt": "แปลเป็นลาว: นักเรียนไปโรงเรียน",
+      "expect_contains": ["ນັກຮຽນ", "ໂຮງຮຽນ"],
+      "forbid_contains": ["นักเรียน", "โรงเรียน"],
+      "note": "student = ນັກຮຽນ; school = ໂຮງຮຽນ"
+    },
+    {
+      "id": "nature_001",
+      "category": "domain_nature",
+      "prompt": "แปลเป็นลาว: ควายอยู่ในนา",
+      "expect_contains": ["ຄວາຍ"],
+      "forbid_contains": ["ควาย"],
+      "note": "buffalo = ຄວາຍ"
+    },
+    {
+      "id": "edge_001",
+      "category": "edge_loanword",
+      "prompt": "แปลเป็นลาว: คอมพิวเตอร์ของฉันเสีย",
+      "expect_contains": ["ຄອມພິວເຕີ້"],
+      "forbid_contains": ["คอมพิวเตอร์"],
+      "note": "loanword should be transliterated to Lao script (ທັບສັບ)"
+    },
+    {
+      "id": "edge_002",
+      "category": "edge_question",
+      "prompt": "แปลเป็นลาว: เธอไปด้วยไหม",
+      "expect_contains": ["ບໍ"],
+      "forbid_contains": ["ไหม", "ໄຫມ", "ໄໝ"],
+      "note": "question particle = ບໍ at clause end, not Thai ไหม"
+    }
+  ]
+}
