@@ -4,11 +4,13 @@ Pure stdlib (no pytest dependency) so contributors can run it with zero setup.
 """
 
 import sys
+import tempfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from khamlao_checker import (  # noqa: E402
     check,
+    check_file,
     classify_register,
     detect_invalid_tone_marks,
     detect_lao_script_thaiisms,
@@ -67,6 +69,20 @@ expect("pure Lao no thai script", detect_thai_script("ສະບາຍດີ")["c
 # --- detect_lao_script_thaiisms catches ໄຫມ ---
 mai = detect_lao_script_thaiisms("ເຈົ້າໄປໄຫມ")
 expect("ໄຫມ flagged", any(t["found"] == "ໄຫມ" for t in mai))
+
+# --- check_file: detects leaks per line, clean file reports zero ---
+with tempfile.TemporaryDirectory() as d:
+    leaky = Path(d) / "leaky.html"
+    leaky.write_text("<p>ກາເຟເຢັນ</p>\n<p>ນຸ່ມລະ" + "มุน" + "</p>\n", encoding="utf-8")
+    lk, total = check_file(str(leaky))
+    expect("check_file finds leak total", total == 3)
+    expect("check_file reports line 2", lk[0][0] == 2)
+    expect("check_file single leaky line", len(lk) == 1)
+
+    clean = Path(d) / "clean.html"
+    clean.write_text("<p>ກາເຟເຢັນ ສົດຊື່ນ</p>\n<button>ສັ່ງຊື້</button>\n", encoding="utf-8")
+    lk2, total2 = check_file(str(clean))
+    expect("check_file clean = 0", total2 == 0 and lk2 == [])
 
 print(f"\n{_passed} passed, {_failed} failed")
 sys.exit(1 if _failed else 0)

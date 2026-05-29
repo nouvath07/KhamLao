@@ -22,6 +22,10 @@ Usage (library):
 Usage (CLI):
     echo "ຂ້ອຍຈະໄປ" | python tools/khamlao_checker.py
     python tools/khamlao_checker.py "ຂ້ານ້ອຍຈະໄປ"
+
+    # Lint files for Thai-script leaks (exits non-zero if any found — CI/hook):
+    python tools/khamlao_checker.py --file examples/coffee-shop.html
+    python tools/khamlao_checker.py --file skills/khamlao/SKILL.md data/web.json
 """
 
 from __future__ import annotations
@@ -213,15 +217,57 @@ def _format_report(r: dict) -> str:
     return "\n".join(lines)
 
 
+def check_file(path: str) -> tuple[list[tuple[int, int, str]], int]:
+    """
+    Scan a file for Thai-script leaks, line by line.
+
+    Returns (leaks, total) where leaks is [(line_no, thai_char_count, fragment)]
+    and total is the sum of Thai-script chars across the file. Works on any text
+    file (HTML, JSON, md) — Thai-script detection ignores English/code/markup.
+    """
+    text = Path(path).read_text(encoding="utf-8")
+    leaks = []
+    for i, line in enumerate(text.splitlines(), 1):
+        ts = detect_thai_script(line)
+        if ts["count"]:
+            frag = "".join(c for _, c in ts["chars"])
+            leaks.append((i, ts["count"], frag))
+    total = sum(n for _, n, _ in leaks)
+    return leaks, total
+
+
 def main() -> None:
-    if len(sys.argv) > 1:
-        text = " ".join(sys.argv[1:])
-    else:
-        text = sys.stdin.read()
     try:
         sys.stdout.reconfigure(encoding="utf-8")  # Windows cp1252 guard
     except AttributeError:
         pass
+
+    args = sys.argv[1:]
+
+    # --file mode: lint one or more files for Thai-script leaks (CI-friendly,
+    # exits non-zero if any leak is found). The point KhamLao learned the hard
+    # way: a detector only helps if it's actually run over generated output.
+    if args and args[0] == "--file":
+        paths = args[1:]
+        if not paths:
+            print("usage: khamlao_checker.py --file <path> [<path> ...]")
+            sys.exit(2)
+        any_leak = False
+        for p in paths:
+            leaks, total = check_file(p)
+            if total:
+                any_leak = True
+                print(f"✗ {p}: {total} Thai-script chars on {len(leaks)} line(s)")
+                for ln, _, frag in leaks[:40]:
+                    print(f"    L{ln}: {frag!r}")
+                if len(leaks) > 40:
+                    print(f"    ... and {len(leaks) - 40} more line(s)")
+            else:
+                print(f"✓ {p}: clean (no Thai-script leak)")
+        sys.exit(1 if any_leak else 0)
+
+    # text mode: check a string from argv or stdin
+    text = " ".join(args) if args else sys.stdin.read()
     print(_format_report(check(text)))
 
 
