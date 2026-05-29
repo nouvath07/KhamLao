@@ -45,12 +45,11 @@ KhamLao is a **Claude Code Skill** (a prompt-engineering artifact that gets inje
                            │
                            ▼
                   ┌─────────────────┐
-                  │ skills/*/SKILL.md│  ← Generated (don't edit)
-                  │  - khamlao       │  Always loaded
-                  │  - everyday      │  Auto-load
-                  │  - cooking       │  Auto-load
-                  │  - school        │  Auto-load
-                  │  - nature        │  Auto-load
+                  │ skills/khamlao/  │  ← Generated (don't edit)
+                  │   SKILL.md       │  Single merged skill:
+                  │  rules + all     │  rules + critical fixes
+                  │  vocab domains   │  + everyday/cooking/
+                  │                  │    school/nature vocab
                   └────────┬────────┘
                            │
                            │  installed via npx skills add OR plugin install
@@ -79,26 +78,23 @@ A "skill" in Claude Code is a directory with a `SKILL.md` file. The file has:
 
 2. **Markdown body** — the actual instructions, vocabulary tables, examples that get injected into Claude's context when the skill is "active."
 
-### Auto-loading mechanics
+### Loading mechanics
 
-When the user sends a message, Claude evaluates each available skill's `description` against the conversation context. Skills whose descriptions match get **loaded** (their full body gets prepended to Claude's working context).
+When the user sends a message, Claude evaluates each available skill's `description` against the conversation context. A matching skill gets **loaded** (its full body is prepended to Claude's working context).
 
-For KhamLao, this means:
+KhamLao is a single skill: its `description` matches "Lao output requested", so the whole skill — rules, critical fixes, and the full vocabulary reference — loads together (~21 KB). Users see one `/khamlao` command, never a domain picker.
 
-- `khamlao` (core): description matches "Lao output requested" → always loaded when writing Lao
-- `khamlao-cooking`: description matches "cooking, food, recipes" → loads when user asks about food
-- `khamlao-school`: description matches "school, education" → loads in education context
-- `khamlao-nature`: description matches "animals, body, nature" → loads in nature context
-- `khamlao-everyday`: description matches "daily conversation" → loads broadly
+### Single skill vs modular — why we merged
 
-### Why this matters for cost/performance
+KhamLao briefly used 5 modular skills (v1.0) that auto-loaded by topic, to keep the always-on footprint small. We merged back to one skill (v1.1) because:
 
-Without modularity (v0.4 monolith), every Lao request loaded 17 KB into context — even if the user asked about cooking and only needed cooking vocab.
+- **UX**: 5 skills surfaced as 5 slash commands (`/khamlao`, `/khamlao-cooking`, …), cluttering the command list and implying users had to pick a domain. They never did — domains auto-loaded — but the clutter was confusing.
+- **Speed reality**: profiling showed Lao latency is dominated by *output* token generation (Lao tokenizes to ~5–10× English), not by the *input* skill context. Trimming the ~5 KB core to a smaller always-on slice saves only a fraction of a second of prefill, while output generation is unchanged. So the modular split bought little real speed.
+- **Maintenance**: one build target, one skill to install and version.
 
-With modularity (v1.0), the always-loaded core is ~5 KB. Domain glossaries add 1–9 KB each, only when relevant. This:
-- Reduces token cost per request
-- Speeds up time-to-first-token
-- Lets us add more domains without bloating the always-on context
+The `data/*.json` files stay split by domain — that boundary is for *editing convenience*, not delivery. `build_skills.py` merges them into the single skill.
+
+**Scaling caveat:** the whole vocabulary now loads into context. Fine at 318 entries; once vocabulary grows past ~1–2K entries, the plan is to move the long tail to a lookup tool (RAG-style) so context stays small. The single `/khamlao` command stays the same to users either way.
 
 ---
 
@@ -129,14 +125,12 @@ khamlao/
 │   └── nature.json          ~32 entries: animals, body, nature
 │
 ├── skills/                  ← GENERATED — do not edit by hand
-│   ├── khamlao/SKILL.md          Core: rules + critical fixes
-│   ├── khamlao-everyday/SKILL.md
-│   ├── khamlao-cooking/SKILL.md
-│   ├── khamlao-school/SKILL.md
-│   └── khamlao-nature/SKILL.md
+│   └── khamlao/SKILL.md          Single merged skill: rules + all vocab
 │
 └── tools/
-    ├── build_skills.py      Active: regenerate skills/ from data/
+    ├── build_skills.py      Active: merge data/*.json into the single skill
+    ├── khamlao_checker.py   Quality detector (Thai-leak, register, tone)
+    ├── scrape_lao_corpus.py Corpus pipeline (PDF → OCR → JSONL)
     └── archive/             Historical one-off scripts (v0.1 → v0.4)
 ```
 
@@ -197,15 +191,16 @@ Single Python file. Run with `python tools/build_skills.py`.
 
 It does:
 1. Read all `data/*.json` files
-2. For each skill, fill in a markdown template (frontmatter + body + tables)
-3. Write to `skills/<skill-name>/SKILL.md`
+2. Render each into markdown tables (`section_everyday`, `section_cooking`, …)
+3. Concatenate core rules + critical fixes + all vocab sections
+4. Write the single `skills/khamlao/SKILL.md`
 
-The templates are inlined in the script (no separate template files). Each skill has its own builder function (`build_core`, `build_everyday`, etc.).
+The templates are inlined in the script (no separate template files).
 
 **Adding a new domain** requires:
 1. Create `data/<domain>.json` with appropriate schema
-2. Add a `build_<domain>()` function in `build_skills.py`
-3. Call it from `main()`
+2. Add a `section_<domain>()` function in `build_skills.py`
+3. Append it to the section list in `main()`
 4. Run the build
 
 **This is intentionally simple** — Python stdlib only, no dependencies, easy to read in one sitting.
@@ -227,11 +222,10 @@ Or manually:
 
 ```bash
 # Universal location used by Claude Code, Gemini CLI, etc.
-cp -r skills/* ~/.agents/skills/
+cp -r skills/khamlao ~/.agents/skills/
 
 # Claude Code reads from ~/.claude/skills/ too — symlink for convenience
 ln -s ~/.agents/skills/khamlao ~/.claude/skills/khamlao
-# (repeat for each khamlao-*)
 ```
 
 ### Published install (for end users)
@@ -262,6 +256,7 @@ claude plugin install khamlao@khamlao
 | v0.3    | 2026-05-23 | Native-speaker review: 10 corrections           |
 | v0.4    | 2026-05-24 | + 78 entries from Lao MOE primary textbooks     |
 | v1.0    | 2026-05-24 | Modular refactor; 5 skills; 318 total entries   |
+| v1.1    | 2026-05-29 | Merge back to 1 skill; + quality checker, eval suite, corpus pipeline |
 
 ---
 

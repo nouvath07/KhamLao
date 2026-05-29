@@ -1,14 +1,14 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "khamlao",
-  "description": "Modular Lao language skill for Claude Code. Core rules + domain glossaries that auto-load by conversation context. ~40-60% token savings.",
+  "description": "Lao language skill for Claude Code. Quality rules + built-in vocabulary in a single skill. ~40-60% token savings.",
   "owner": {
     "name": "KhamLao Contributors"
   },
   "plugins": [
     {
       "name": "khamlao",
-      "description": "ຄຳລາວ — ໂໝດພາສາລາວທີ່ຖືກຕ້ອງ ແລະ ກະທັດຮັດ ສຳລັບ Claude. v1.0 modular: core + 4 auto-load domain glossaries.",
+      "description": "ຄຳລາວ — ໂໝດພາສາລາວທີ່ຖືກຕ້ອງ ແລະ ກະທັດຮັດ ສຳລັບ Claude. ໂໝດດຽວ: ກົດ + ຄຳສັບໃນຕົວ.",
       "source": "./",
       "category": "productivity"
     }

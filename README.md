@@ -14,22 +14,30 @@ Inspired by [pordee](https://github.com/kerlos/pordee) (Thai compression skill),
 
 ---
 
-## v1.0 — Modular architecture
+## Architecture — one skill, one command
 
-KhamLao is split into 5 skills. The **core** is always active when writing Lao; **4 domain glossaries** auto-load by context to keep memory usage low.
+KhamLao is a **single skill** (`/khamlao`). The data is kept split by domain in
+`data/*.json` for ease of editing, but `build_skills.py` merges everything into
+one `SKILL.md` — so users see just one command, never a domain picker.
 
 ```
-khamlao                  Core: rules + critical false-friends         (~5 KB, always on)
-├─ khamlao-everyday      Time, family, numbers, common verbs/adj      (~9 KB, daily chat)
-├─ khamlao-cooking       Food, herbs, methods, utensils, dishes       (~6 KB, food context)
-├─ khamlao-school        Education vocabulary                          (~1 KB, school context)
-└─ khamlao-nature        Animals, body parts, nature                   (~2 KB, animal/nature context)
+skills/khamlao/SKILL.md   (~21 KB)
+├─ Quality rules + critical false-friends   (always)
+└─ Vocabulary reference
+   ├─ Everyday   time, family, numbers, common verbs/adj
+   ├─ Cooking    food, herbs, methods, utensils, dishes
+   ├─ School     education vocabulary
+   └─ Nature     animals, body parts, nature
 ```
 
-**Total vocabulary: 314 entries** across rules + 4 domains, sourced from:
+**Total vocabulary: 318 entries**, sourced from:
 - Gemini CLI bootstrap (verified Lao output)
 - Native-speaker reviewer (@nouvath07)
 - Lao MOE primary school textbooks (ປ.1, ປ.2, ປ.4)
+
+> **Note on scale:** the whole vocabulary loads into context with the skill.
+> That's fine at this size; once it grows past ~1–2K entries the plan is to move
+> the long tail to a lookup tool (see "What's next").
 
 ---
 
@@ -48,11 +56,11 @@ claude plugin install khamlao@khamlao
 npx skills add https://github.com/nouvath07/KhamLao --skill khamlao
 ```
 
-This installs all 5 skills (core + 4 domains) to your universal agents directory.
+This installs the single `khamlao` skill to your universal agents directory.
 
 ### Manual
 
-Copy `skills/*` to your `~/.claude/skills/`.
+Copy `skills/khamlao/` to your `~/.claude/skills/`.
 
 ---
 
@@ -79,20 +87,18 @@ Copy `skills/*` to your `~/.claude/skills/`.
 
 ---
 
-## How auto-loading works
+## How it loads
 
-The **core** skill (`khamlao`) is always loaded when Lao output is requested. It contains:
+The single `khamlao` skill loads when Lao output is requested. It contains:
 - 7 quality rules (script, register, tense, tone, no Thai-isms, transliteration, technical IDs)
 - 9 critical false-friends (most common Claude leaks)
 - Compression rules
+- The full vocabulary reference (everyday, cooking, school, nature)
 
-The **domain glossaries** load only when relevant:
-- Ask about cooking → `khamlao-cooking` auto-loads
-- Ask about school → `khamlao-school` auto-loads
-- Talk about animals → `khamlao-nature` auto-loads
-- General conversation → `khamlao-everyday` auto-loads
-
-This keeps the always-loaded footprint small (~5 KB) while making the full vocabulary (~25 KB) available when needed.
+One skill, one command — no domain picker. The whole skill (~21 KB) loads
+together. Most response latency for Lao comes from generating Lao output tokens
+(Lao tokenizes to ~5–10× English), not from this context, so a single merged
+skill keeps the UX simple without a meaningful speed cost at the current size.
 
 ---
 
@@ -132,13 +138,11 @@ khamlao/
 │   ├── school.json
 │   └── nature.json
 ├── skills/                  ← Generated (do not edit directly)
-│   ├── khamlao/SKILL.md
-│   ├── khamlao-everyday/SKILL.md
-│   ├── khamlao-cooking/SKILL.md
-│   ├── khamlao-school/SKILL.md
-│   └── khamlao-nature/SKILL.md
+│   └── khamlao/SKILL.md     ← Single merged skill (all domains)
 ├── tools/
-│   ├── build_skills.py      ← Generate SKILL.md from data/
+│   ├── build_skills.py      ← Merge data/*.json into the single SKILL.md
+│   ├── khamlao_checker.py   ← Quality detector (Thai-leak, register, tone)
+│   ├── scrape_lao_corpus.py ← Corpus pipeline (PDF → OCR → JSONL)
 │   └── archive/             ← Historical one-off scripts
 ├── .claude-plugin/          ← Plugin metadata
 ├── .github/                 ← Issue & PR templates
@@ -149,7 +153,7 @@ khamlao/
 
 1. Edit the relevant `data/*.json` file
 2. Run `python tools/build_skills.py`
-3. Commit both the `data/` change and the regenerated `skills/*/SKILL.md`
+3. Commit both the `data/` change and the regenerated `skills/khamlao/SKILL.md`
 
 ---
 

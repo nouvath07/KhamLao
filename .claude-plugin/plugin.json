@@ -1,6 +1,6 @@
 {
   "name": "khamlao",
-  "description": "ຄຳລາວ (KhamLao) — Lao language quality + compression for Claude. Modular skills: core (rules + critical fixes, always-on) + everyday/cooking/school/nature glossaries (auto-load by context).",
+  "description": "ຄຳລາວ (KhamLao) — Lao language quality + compression for Claude. Single skill: quality rules + critical false-friend fixes + built-in vocabulary (everyday/cooking/school/nature). ~40-60% token savings.",
   "author": {
     "name": "KhamLao Contributors"
   }
