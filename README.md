@@ -35,7 +35,7 @@ skills/khamlao/SKILL.md   (~26 KB)
 - Gemini CLI bootstrap (verified Lao output)
 - Native-speaker reviewer (@nouvath07)
 - Lao MOE primary school textbooks (ປ.1, ປ.2, ປ.4)
-- Web/UI terms for building Lao-language interfaces (entries marked `verify` pending native review)
+- Web/UI terms for building Lao-language interfaces (native-reviewed)
 
 > **Note on scale:** the whole vocabulary loads into context with the skill.
 > That's fine at this size; once it grows past ~1–2K entries the plan is to move

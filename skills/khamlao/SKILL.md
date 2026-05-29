@@ -496,29 +496,29 @@ For building Lao-language interfaces. Entries marked `verify` need native-speake
 | `ຊື່ຜູ້ໃຊ້` | username |  |
 | `ບັນຊີ` | account |  |
 | `ລືມລະຫັດຜ່ານ` | forgot password |  |
-| `ຢືນຢັນລະຫັດຜ່ານ` | confirm password | verify |
+| `ຢືນຢັນລະຫັດຜ່ານ` | confirm password |  |
 
 ### Actions
 
 | Lao | English | Note |
 |---|---|---|
 | `ບັນທຶກ` | save |  |
-| `ລຶບ` | delete |  |
+| `ລົບ` | delete | ລືບ is colloquial/dialectal — use ລົບ |
 | `ແກ້ໄຂ` | edit |  |
 | `ສົ່ງ` | submit / send |  |
 | `ຢືນຢັນ` | confirm |  |
 | `ຍົກເລີກ` | cancel |  |
 | `ຄົ້ນຫາ` | search |  |
-| `ກັ່ນຕອງ` | filter | verify |
-| `ຮຽງລຳດັບ` | sort | verify |
+| `ກັ່ນຕອງ` | filter |  |
+| `ຮຽງລຳດັບ` | sort |  |
 | `ເພີ່ມ` | add |  |
-| `ເອົາອອກ` | remove | verify |
+| `ເອົາອອກ` | remove |  |
 | `ເລືອກ` | select / choose |  |
 | `ດາວໂຫຼດ` | download | transliteration (ທັບສັບ) |
 | `ອັບໂຫຼດ` | upload | transliteration (ທັບສັບ) |
 | `ແບ່ງປັນ` | share |  |
-| `ສຳເນົາ` | copy | verify; loanword ກັອບປີ້ also used |
-| `ປັບປຸງ` | update | verify; ອັບເດດ (transliteration) also common |
+| `ສຳເນົາ` | copy | loanword ກັອບປີ້ also used |
+| `ອັບເດດ` | update | transliteration (ທັບສັບ) |
 
 ### Navigation
 
@@ -530,7 +530,7 @@ For building Lao-language interfaces. Entries marked `verify` need native-speake
 | `ເມນູ` | menu | transliteration (ທັບສັບ) |
 | `ກັບຄືນ` | back |  |
 | `ຕໍ່ໄປ` | next |  |
-| `ກ່ອນໜ້າ` | previous | verify |
+| `ກ່ອນໜ້າ` | previous |  |
 | `ປິດ` | close |  |
 | `ເປີດ` | open |  |
 | `ເພີ່ມເຕີມ` | more / see more |  |
@@ -541,31 +541,31 @@ For building Lao-language interfaces. Entries marked `verify` need native-speake
 |---|---|---|
 | `ການຈອງ` | booking (noun) |  |
 | `ຈອງ` | book / reserve (verb) |  |
-| `ກະຕ່າສິນຄ້າ` | shopping cart | verify |
-| `ຊຳລະເງິນ` | checkout / pay | verify |
+| `ກະຕ່າສິນຄ້າ` | shopping cart |  |
+| `ຊຳລະເງິນ` | checkout / pay |  |
 | `ການຊຳລະເງິນ` | payment |  |
 | `ລາຄາ` | price |  |
 | `ສ່ວນຫຼຸດ` | discount |  |
 | `ລວມທັງໝົດ` | total |  |
-| `ຫວ່າງ` | available (slot) | verify; context-dependent |
-| `ເຕັມ` | full / booked | verify |
+| `ວ່າງ` | available (slot) | context-dependent |
+| `ເຕັມ` | full / booked |  |
 | `ວັນທີ` | date |  |
 | `ເວລາ` | time |  |
-| `ສັ່ງຊື້` | order | verify |
+| `ສັ່ງຊື້` | order |  |
 
 ### Forms
 
 | Lao | English | Note |
 |---|---|---|
 | `ຊື່` | name |  |
-| `ນາມສະກຸນ` | surname / last name | verify |
+| `ນາມສະກຸນ` | surname / last name |  |
 | `ອີເມວ` | email | transliteration (ທັບສັບ) |
 | `ເບີໂທ` | phone number | ເບີໂທລະສັບ full form |
 | `ທີ່ຢູ່` | address |  |
 | `ຂໍ້ຄວາມ` | message |  |
-| `ຈຳເປັນຕ້ອງປ້ອນ` | required | verify; for required field |
-| `ບໍ່ບັງຄັບ` | optional | verify |
-| `ປ້ອນຂໍ້ມູນ` | enter / input | verify |
+| `ຈຳເປັນຕ້ອງປ້ອນ` | required |  |
+| `ບໍ່ບັງຄັບ` | optional |  |
+| `ປ້ອນຂໍ້ມູນ` | enter / input |  |
 
 ### Status
 
@@ -574,8 +574,8 @@ For building Lao-language interfaces. Entries marked `verify` need native-speake
 | `ກຳລັງໂຫຼດ` | loading |  |
 | `ສຳເລັດ` | success / done |  |
 | `ຂໍ້ຜິດພາດ` | error |  |
-| `ລົ້ມເຫຼວ` | failed | verify |
-| `ລໍຖ້າ` | pending / waiting | verify |
+| `ລົ້ມເຫຼວ` | failed |  |
+| `ລໍຖ້າ` | pending / waiting |  |
 | `ຄຳເຕືອນ` | warning |  |
 | `ການແຈ້ງເຕືອນ` | notification |  |
 
@@ -586,8 +586,8 @@ For building Lao-language interfaces. Entries marked `verify` need native-speake
 | `ຜູ້ໃຊ້` | user |  |
 | `ໂປຣໄຟລ໌` | profile | transliteration (ທັບສັບ) |
 | `ການຕັ້ງຄ່າ` | settings |  |
-| `ໜ້າຄວບຄຸມ` | dashboard | verify; 'dashboard' transliteration also used |
+| `ໜ້າຄວບຄຸມ` | dashboard |  |
 | `ພາສາ` | language |  |
 | `ຊ່ວຍເຫຼືອ` | help |  |
-| `ຂໍ້ກຳນົດການນຳໃຊ້` | terms of use | verify |
-| `ຄວາມເປັນສ່ວນຕົວ` | privacy | verify |
+| `ຂໍ້ກຳນົດການນຳໃຊ້` | terms of use |  |
+| `ຄວາມເປັນສ່ວນຕົວ` | privacy |  |

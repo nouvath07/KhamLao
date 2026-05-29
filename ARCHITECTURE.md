@@ -123,7 +123,7 @@ khamlao/
 │   ├── cooking.json         ~90 entries: food, herbs, methods
 │   ├── school.json          ~15 entries: education vocab
 │   ├── nature.json          ~32 entries: animals, body, nature
-│   └── web.json             ~72 entries: UI/web/tech (some pending verify)
+│   └── web.json             ~72 entries: UI/web/tech (native-reviewed)
 │
 ├── skills/                  ← GENERATED — do not edit by hand
 │   └── khamlao/SKILL.md          Single merged skill: rules + all vocab
