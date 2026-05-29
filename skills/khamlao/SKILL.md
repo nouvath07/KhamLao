@@ -479,3 +479,115 @@ From Lao MOE ປ.1-ປ.4 textbooks.
 | `ໄມ້` | wood |  |
 | `ທໍາມະຊາດ` | nature |  |
 | `ຕາເວັນ` | sun |  |
+
+## Web / UI (ໜ້າເວັບ ແລະ UI)
+
+For building Lao-language interfaces. Entries marked `verify` need native-speaker confirmation. Loanwords are transliterated (ທັບສັບ).
+
+
+### Auth
+
+| Lao | English | Note |
+|---|---|---|
+| `ເຂົ້າສູ່ລະບົບ` | log in |  |
+| `ອອກຈາກລະບົບ` | log out |  |
+| `ລົງທະບຽນ` | register / sign up |  |
+| `ລະຫັດຜ່ານ` | password |  |
+| `ຊື່ຜູ້ໃຊ້` | username |  |
+| `ບັນຊີ` | account |  |
+| `ລືມລະຫັດຜ່ານ` | forgot password |  |
+| `ຢືນຢັນລະຫັດຜ່ານ` | confirm password | verify |
+
+### Actions
+
+| Lao | English | Note |
+|---|---|---|
+| `ບັນທຶກ` | save |  |
+| `ລຶບ` | delete |  |
+| `ແກ້ໄຂ` | edit |  |
+| `ສົ່ງ` | submit / send |  |
+| `ຢືນຢັນ` | confirm |  |
+| `ຍົກເລີກ` | cancel |  |
+| `ຄົ້ນຫາ` | search |  |
+| `ກັ່ນຕອງ` | filter | verify |
+| `ຮຽງລຳດັບ` | sort | verify |
+| `ເພີ່ມ` | add |  |
+| `ເອົາອອກ` | remove | verify |
+| `ເລືອກ` | select / choose |  |
+| `ດາວໂຫຼດ` | download | transliteration (ທັບສັບ) |
+| `ອັບໂຫຼດ` | upload | transliteration (ທັບສັບ) |
+| `ແບ່ງປັນ` | share |  |
+| `ສຳເນົາ` | copy | verify; loanword ກັອບປີ້ also used |
+| `ປັບປຸງ` | update | verify; ອັບເດດ (transliteration) also common |
+
+### Navigation
+
+| Lao | English | Note |
+|---|---|---|
+| `ໜ້າຫຼັກ` | home |  |
+| `ກ່ຽວກັບ` | about | ກ່ຽວກັບພວກເຮົາ = about us |
+| `ຕິດຕໍ່` | contact |  |
+| `ເມນູ` | menu | transliteration (ທັບສັບ) |
+| `ກັບຄືນ` | back |  |
+| `ຕໍ່ໄປ` | next |  |
+| `ກ່ອນໜ້າ` | previous | verify |
+| `ປິດ` | close |  |
+| `ເປີດ` | open |  |
+| `ເພີ່ມເຕີມ` | more / see more |  |
+
+### Booking & commerce
+
+| Lao | English | Note |
+|---|---|---|
+| `ການຈອງ` | booking (noun) |  |
+| `ຈອງ` | book / reserve (verb) |  |
+| `ກະຕ່າສິນຄ້າ` | shopping cart | verify |
+| `ຊຳລະເງິນ` | checkout / pay | verify |
+| `ການຊຳລະເງິນ` | payment |  |
+| `ລາຄາ` | price |  |
+| `ສ່ວນຫຼຸດ` | discount |  |
+| `ລວມທັງໝົດ` | total |  |
+| `ຫວ່າງ` | available (slot) | verify; context-dependent |
+| `ເຕັມ` | full / booked | verify |
+| `ວັນທີ` | date |  |
+| `ເວລາ` | time |  |
+| `ສັ່ງຊື້` | order | verify |
+
+### Forms
+
+| Lao | English | Note |
+|---|---|---|
+| `ຊື່` | name |  |
+| `ນາມສະກຸນ` | surname / last name | verify |
+| `ອີເມວ` | email | transliteration (ທັບສັບ) |
+| `ເບີໂທ` | phone number | ເບີໂທລະສັບ full form |
+| `ທີ່ຢູ່` | address |  |
+| `ຂໍ້ຄວາມ` | message |  |
+| `ຈຳເປັນຕ້ອງປ້ອນ` | required | verify; for required field |
+| `ບໍ່ບັງຄັບ` | optional | verify |
+| `ປ້ອນຂໍ້ມູນ` | enter / input | verify |
+
+### Status
+
+| Lao | English | Note |
+|---|---|---|
+| `ກຳລັງໂຫຼດ` | loading |  |
+| `ສຳເລັດ` | success / done |  |
+| `ຂໍ້ຜິດພາດ` | error |  |
+| `ລົ້ມເຫຼວ` | failed | verify |
+| `ລໍຖ້າ` | pending / waiting | verify |
+| `ຄຳເຕືອນ` | warning |  |
+| `ການແຈ້ງເຕືອນ` | notification |  |
+
+### Interface
+
+| Lao | English | Note |
+|---|---|---|
+| `ຜູ້ໃຊ້` | user |  |
+| `ໂປຣໄຟລ໌` | profile | transliteration (ທັບສັບ) |
+| `ການຕັ້ງຄ່າ` | settings |  |
+| `ໜ້າຄວບຄຸມ` | dashboard | verify; 'dashboard' transliteration also used |
+| `ພາສາ` | language |  |
+| `ຊ່ວຍເຫຼືອ` | help |  |
+| `ຂໍ້ກຳນົດການນຳໃຊ້` | terms of use | verify |
+| `ຄວາມເປັນສ່ວນຕົວ` | privacy | verify |

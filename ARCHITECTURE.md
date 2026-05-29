@@ -94,7 +94,7 @@ KhamLao briefly used 5 modular skills (v1.0) that auto-loaded by topic, to keep 
 
 The `data/*.json` files stay split by domain — that boundary is for *editing convenience*, not delivery. `build_skills.py` merges them into the single skill.
 
-**Scaling caveat:** the whole vocabulary now loads into context. Fine at 318 entries; once vocabulary grows past ~1–2K entries, the plan is to move the long tail to a lookup tool (RAG-style) so context stays small. The single `/khamlao` command stays the same to users either way.
+**Scaling caveat:** the whole vocabulary now loads into context. Fine at ~390 entries; once vocabulary grows past ~1–2K entries, the plan is to move the long tail to a lookup tool (RAG-style) so context stays small. The single `/khamlao` command stays the same to users either way.
 
 ---
 
@@ -122,7 +122,8 @@ khamlao/
 │   ├── everyday.json        ~170 entries: pronouns, time, family, common
 │   ├── cooking.json         ~90 entries: food, herbs, methods
 │   ├── school.json          ~15 entries: education vocab
-│   └── nature.json          ~32 entries: animals, body, nature
+│   ├── nature.json          ~32 entries: animals, body, nature
+│   └── web.json             ~72 entries: UI/web/tech (some pending verify)
 │
 ├── skills/                  ← GENERATED — do not edit by hand
 │   └── khamlao/SKILL.md          Single merged skill: rules + all vocab

@@ -21,19 +21,21 @@ KhamLao is a **single skill** (`/khamlao`). The data is kept split by domain in
 one `SKILL.md` — so users see just one command, never a domain picker.
 
 ```
-skills/khamlao/SKILL.md   (~21 KB)
+skills/khamlao/SKILL.md   (~26 KB)
 ├─ Quality rules + critical false-friends   (always)
 └─ Vocabulary reference
    ├─ Everyday   time, family, numbers, common verbs/adj
    ├─ Cooking    food, herbs, methods, utensils, dishes
    ├─ School     education vocabulary
-   └─ Nature     animals, body parts, nature
+   ├─ Nature     animals, body parts, nature
+   └─ Web / UI   auth, actions, nav, booking, forms, status
 ```
 
-**Total vocabulary: 318 entries**, sourced from:
+**Total vocabulary: 390 entries**, sourced from:
 - Gemini CLI bootstrap (verified Lao output)
 - Native-speaker reviewer (@nouvath07)
 - Lao MOE primary school textbooks (ປ.1, ປ.2, ປ.4)
+- Web/UI terms for building Lao-language interfaces (entries marked `verify` pending native review)
 
 > **Note on scale:** the whole vocabulary loads into context with the skill.
 > That's fine at this size; once it grows past ~1–2K entries the plan is to move

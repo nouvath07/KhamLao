@@ -206,6 +206,29 @@ def section_school() -> tuple[str, int]:
     return "\n".join(parts), len(data["entries"])
 
 
+def section_web() -> tuple[str, int]:
+    data = json.loads((DATA / "web.json").read_text(encoding="utf-8"))
+    cats = [
+        ("auth", "Auth"),
+        ("actions", "Actions"),
+        ("navigation", "Navigation"),
+        ("booking_commerce", "Booking & commerce"),
+        ("forms", "Forms"),
+        ("status", "Status"),
+        ("interface", "Interface"),
+    ]
+    parts = ["\n## Web / UI (ໜ້າເວັບ ແລະ UI)\n",
+             "For building Lao-language interfaces. Entries marked `verify` need "
+             "native-speaker confirmation. Loanwords are transliterated (ທັບສັບ).\n"]
+    total = 0
+    for key, title in cats:
+        entries = data.get(key, [])
+        if entries:
+            parts.append("\n" + render_lao_table(entries, title))
+            total += len(entries)
+    return "\n".join(parts), total
+
+
 def section_nature() -> tuple[str, int]:
     data = json.loads((DATA / "nature.json").read_text(encoding="utf-8"))
     parts = ["\n## Nature (ທໍາມະຊາດ)\n", "From Lao MOE ປ.1-ປ.4 textbooks.\n"]
@@ -229,7 +252,8 @@ def main() -> None:
 
     sections, counts = [], {"critical": len(critical["entries"])}
     for name, fn in (("everyday", section_everyday), ("cooking", section_cooking),
-                     ("school", section_school), ("nature", section_nature)):
+                     ("school", section_school), ("nature", section_nature),
+                     ("web", section_web)):
         text, n = fn()
         sections.append(text)
         counts[name] = n

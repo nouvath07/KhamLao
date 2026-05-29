@@ -1,0 +1,89 @@
+{
+  "_comment": "Web/UI/tech vocabulary for building Lao-language interfaces. Entries marked 'verify' need native-speaker confirmation before being treated as authoritative — Claude's Lao for tech/UI terms is weak. Loanwords are transliterated (ທັບສັບ) per KhamLao rules.",
+  "auth": [
+    { "lao": "ເຂົ້າສູ່ລະບົບ", "en": "log in", "note": "" },
+    { "lao": "ອອກຈາກລະບົບ", "en": "log out", "note": "" },
+    { "lao": "ລົງທະບຽນ", "en": "register / sign up", "note": "" },
+    { "lao": "ລະຫັດຜ່ານ", "en": "password", "note": "" },
+    { "lao": "ຊື່ຜູ້ໃຊ້", "en": "username", "note": "" },
+    { "lao": "ບັນຊີ", "en": "account", "note": "" },
+    { "lao": "ລືມລະຫັດຜ່ານ", "en": "forgot password", "note": "" },
+    { "lao": "ຢືນຢັນລະຫັດຜ່ານ", "en": "confirm password", "note": "verify" }
+  ],
+  "actions": [
+    { "lao": "ບັນທຶກ", "en": "save", "note": "" },
+    { "lao": "ລຶບ", "en": "delete", "note": "" },
+    { "lao": "ແກ້ໄຂ", "en": "edit", "note": "" },
+    { "lao": "ສົ່ງ", "en": "submit / send", "note": "" },
+    { "lao": "ຢືນຢັນ", "en": "confirm", "note": "" },
+    { "lao": "ຍົກເລີກ", "en": "cancel", "note": "" },
+    { "lao": "ຄົ້ນຫາ", "en": "search", "note": "" },
+    { "lao": "ກັ່ນຕອງ", "en": "filter", "note": "verify" },
+    { "lao": "ຮຽງລຳດັບ", "en": "sort", "note": "verify" },
+    { "lao": "ເພີ່ມ", "en": "add", "note": "" },
+    { "lao": "ເອົາອອກ", "en": "remove", "note": "verify" },
+    { "lao": "ເລືອກ", "en": "select / choose", "note": "" },
+    { "lao": "ດາວໂຫຼດ", "en": "download", "note": "transliteration (ທັບສັບ)" },
+    { "lao": "ອັບໂຫຼດ", "en": "upload", "note": "transliteration (ທັບສັບ)" },
+    { "lao": "ແບ່ງປັນ", "en": "share", "note": "" },
+    { "lao": "ສຳເນົາ", "en": "copy", "note": "verify; loanword ກັອບປີ້ also used" },
+    { "lao": "ປັບປຸງ", "en": "update", "note": "verify; ອັບເດດ (transliteration) also common" }
+  ],
+  "navigation": [
+    { "lao": "ໜ້າຫຼັກ", "en": "home", "note": "" },
+    { "lao": "ກ່ຽວກັບ", "en": "about", "note": "ກ່ຽວກັບພວກເຮົາ = about us" },
+    { "lao": "ຕິດຕໍ່", "en": "contact", "note": "" },
+    { "lao": "ເມນູ", "en": "menu", "note": "transliteration (ທັບສັບ)" },
+    { "lao": "ກັບຄືນ", "en": "back", "note": "" },
+    { "lao": "ຕໍ່ໄປ", "en": "next", "note": "" },
+    { "lao": "ກ່ອນໜ້າ", "en": "previous", "note": "verify" },
+    { "lao": "ປິດ", "en": "close", "note": "" },
+    { "lao": "ເປີດ", "en": "open", "note": "" },
+    { "lao": "ເພີ່ມເຕີມ", "en": "more / see more", "note": "" }
+  ],
+  "booking_commerce": [
+    { "lao": "ການຈອງ", "en": "booking (noun)", "note": "" },
+    { "lao": "ຈອງ", "en": "book / reserve (verb)", "note": "" },
+    { "lao": "ກະຕ່າສິນຄ້າ", "en": "shopping cart", "note": "verify" },
+    { "lao": "ຊຳລະເງິນ", "en": "checkout / pay", "note": "verify" },
+    { "lao": "ການຊຳລະເງິນ", "en": "payment", "note": "" },
+    { "lao": "ລາຄາ", "en": "price", "note": "" },
+    { "lao": "ສ່ວນຫຼຸດ", "en": "discount", "note": "" },
+    { "lao": "ລວມທັງໝົດ", "en": "total", "note": "" },
+    { "lao": "ຫວ່າງ", "en": "available (slot)", "note": "verify; context-dependent" },
+    { "lao": "ເຕັມ", "en": "full / booked", "note": "verify" },
+    { "lao": "ວັນທີ", "en": "date", "note": "" },
+    { "lao": "ເວລາ", "en": "time", "note": "" },
+    { "lao": "ສັ່ງຊື້", "en": "order", "note": "verify" }
+  ],
+  "forms": [
+    { "lao": "ຊື່", "en": "name", "note": "" },
+    { "lao": "ນາມສະກຸນ", "en": "surname / last name", "note": "verify" },
+    { "lao": "ອີເມວ", "en": "email", "note": "transliteration (ທັບສັບ)" },
+    { "lao": "ເບີໂທ", "en": "phone number", "note": "ເບີໂທລະສັບ full form" },
+    { "lao": "ທີ່ຢູ່", "en": "address", "note": "" },
+    { "lao": "ຂໍ້ຄວາມ", "en": "message", "note": "" },
+    { "lao": "ຈຳເປັນຕ້ອງປ້ອນ", "en": "required", "note": "verify; for required field" },
+    { "lao": "ບໍ່ບັງຄັບ", "en": "optional", "note": "verify" },
+    { "lao": "ປ້ອນຂໍ້ມູນ", "en": "enter / input", "note": "verify" }
+  ],
+  "status": [
+    { "lao": "ກຳລັງໂຫຼດ", "en": "loading", "note": "" },
+    { "lao": "ສຳເລັດ", "en": "success / done", "note": "" },
+    { "lao": "ຂໍ້ຜິດພາດ", "en": "error", "note": "" },
+    { "lao": "ລົ້ມເຫຼວ", "en": "failed", "note": "verify" },
+    { "lao": "ລໍຖ້າ", "en": "pending / waiting", "note": "verify" },
+    { "lao": "ຄຳເຕືອນ", "en": "warning", "note": "" },
+    { "lao": "ການແຈ້ງເຕືອນ", "en": "notification", "note": "" }
+  ],
+  "interface": [
+    { "lao": "ຜູ້ໃຊ້", "en": "user", "note": "" },
+    { "lao": "ໂປຣໄຟລ໌", "en": "profile", "note": "transliteration (ທັບສັບ)" },
+    { "lao": "ການຕັ້ງຄ່າ", "en": "settings", "note": "" },
+    { "lao": "ໜ້າຄວບຄຸມ", "en": "dashboard", "note": "verify; 'dashboard' transliteration also used" },
+    { "lao": "ພາສາ", "en": "language", "note": "" },
+    { "lao": "ຊ່ວຍເຫຼືອ", "en": "help", "note": "" },
+    { "lao": "ຂໍ້ກຳນົດການນຳໃຊ້", "en": "terms of use", "note": "verify" },
+    { "lao": "ຄວາມເປັນສ່ວນຕົວ", "en": "privacy", "note": "verify" }
+  ]
+}
